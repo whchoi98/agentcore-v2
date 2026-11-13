@@ -44,10 +44,10 @@ def hline(c, x1, x2, y, color=RULE, width=0.8, dashed=False):
 # --------------------------------------------------------------------------
 def fig01():
     c = Canvas(f"{SLUG}-fig01", "V1과 V2의 세션 시작 경로",
-               "V1은 세션마다 이미지 pull, 프로세스 기동, 초기화를 반복하고, V2는 런타임 생성 시 한 번 초기화한 환경의 스냅샷을 모든 세션이 복원한다")
-    c.text("top", 40, 44, "세션 시작 경로: V1(매 세션 전체 시작)과 V2(스냅샷 복원)", size=20, weight=600)
+               "V1은 사전 초기화 환경이 없는 새 세션마다 이미지 pull, 프로세스 기동, 초기화를 반복하고, V2는 런타임 생성 시 한 번 초기화한 환경의 스냅샷을 모든 세션이 복원한다")
+    c.text("top", 40, 44, "세션 시작 경로: V1(준비된 환경이 없으면 전체 시작)과 V2(스냅샷 복원)", size=20, weight=600)
     # V1 lane
-    c.zone(40, 72, 1200, 256, title="platformVersion V1", eyebrow="새 세션마다 전체 시작 절차를 반복")
+    c.zone(40, 72, 1200, 256, title="platformVersion V1", eyebrow="사전 초기화 환경이 소진되면 새 세션마다 전체 시작 절차를 반복")
     xs = [64, 296, 528, 760, 992]
     names = [("새 세션 요청", "input"), ("이미지 pull", "backend"), ("프로세스 기동", "backend"),
              ("초기화 코드 실행", "backend"), ("첫 요청 처리", "backend")]
@@ -57,6 +57,8 @@ def fig01():
         c.arrow([(a + 200, 196), (b, 196)], color=INK)
     c.text("zones", 296, 276, "서울 리전 cold start p75 (이미지 크기에 비례)", size=16, fill=SOFT)
     c.text("zones", 296, 304, "200 MB 5.37초 / 1 GB 13.41초 / 2 GB 27.51초", size=16, fill=INK, mono=True)
+    c.text("zones", 824, 276, "사전 초기화 환경에 배정된 세션", size=16, fill=SOFT)
+    c.text("zones", 824, 304, "0.4초 안팎, 엔드포인트당 약 10개", size=16, fill=INK)
     # V2 lane
     c.zone(40, 352, 1200, 288, title="platformVersion V2", eyebrow="위 행은 런타임 생성/업데이트 시 1회, 아래 행은 새 세션마다")
     c.node(64, 416, 248, 72, "컨테이너 기동, 초기화", kind="backend")
@@ -75,7 +77,7 @@ def fig01():
     c.text("zones", 808, 468, "(V1은 3.1초에서 3.3초)", size=16, fill=SOFT)
     c.text("zones", 808, 576, "서울 리전 cold start p75 (이미지 크기 무관)", size=16, fill=SOFT)
     c.text("zones", 808, 604, "200 MB 1.77초 / 1 GB 1.74초 / 2 GB 1.81초", size=16, fill=SERIES_TEAL, mono=True)
-    c.legend([("ink", "V1 시작 경로 (세션마다 반복)"), ("teal", "V2 시작 경로"),
+    c.legend([("ink", "V1 시작 경로 (준비된 환경이 없는 세션마다)"), ("teal", "V2 시작 경로"),
               ("dashed", "스냅샷 촬영 후 세션마다 참조")], y=664)
     c.check()
     c.write(os.path.join(OUT, f"{SLUG}-fig01-start-path.html"), os.path.join(OUT, f"{SLUG}-fig01-start-path.svg"))

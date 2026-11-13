@@ -21,3 +21,5 @@
 - docs.aws.amazon.com 외에 aws.amazon.com의 What's New, 블로그, 요금 페이지도 `/ko/` 경로로 리디렉션되므로, 한국어 tech 블로그의 참고 자료에는 `/ko/` URL을 사용하고 제목은 그 페이지의 실제 제목(9월 GA 발표문은 한국어 제목)을 쓴다
 - AWS 서비스 아키텍처 그림을 aws-diagram으로 그린 뒤 render_diagrams.py로 렌더하려면, diagram_lib의 Canvas와 같은 `@font-face` 선언으로 SVG를 감싼 HTML을 만들어야 `fonts: True` 검사가 의미를 가진다
 - 자동 오버플로 검사는 캔버스 경계만 보므로 존 테두리를 넘는 라벨은 잡지 못한다. PNG를 눈으로 볼 때 존 오른쪽 끝의 수치 라벨을 따로 확인한다
+- 공동 저자 원고에서는 `check_structure.py`가 바이라인을 `by WOO HYUNG CHOI on `으로 시작하는 줄로만 찾으므로 `by WOO HYUNG CHOI and <공동 저자> on ...` 형식이 실패한다. 공동 저자 바이라인 형식과 두 번째 저자 소개를 허용하도록 검사와 structure.md를 함께 고쳐야 한다(2026-11-13 확인)
+- 공동 저자의 자료를 넣을 때는 별도 장으로 떼지 않고 글의 중심 주장(예: V2가 V1보다 나은 점)을 받치는 위치에 나눠 넣는다(2026-11-13 사용자 지시, 규칙 확정 여부는 미정)

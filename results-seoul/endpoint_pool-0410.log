@@ -1,0 +1,16 @@
+[deploy] role AgentCoreV2BenchExecutionRoleSeoul exists, trust policy refreshed
+[pool] acpool_single_0410: READY in 3.2s platformVersion=V1
+[pool] acpool_rr3_0410: READY in 3.2s platformVersion=V1
+[pool] acpool_rr3_0410::rr1: READY in 3.1s
+[pool] acpool_rr3_0410::rr2: READY in 3.1s
+[pool] settling 300s
+[pool] single: {'sessions': 30, 'ok': 30, 'errors': [], 'fast': 10, 'slow': 20, 'fast_median_ms': 493.81, 'slow_median_ms': 13549.35, 'fast_median_uptime_mono_s': 3.54, 'slow_median_uptime_mono_s': 0.42, 'distinct_boot_ids': 30}
+[pool]   single::DEFAULT: fast 10 slow 20
+[pool] rr3: {'sessions': 30, 'ok': 30, 'errors': [], 'fast': 30, 'slow': 0, 'fast_median_ms': 468.98, 'slow_median_ms': None, 'fast_median_uptime_mono_s': 3.67, 'slow_median_uptime_mono_s': None, 'distinct_boot_ids': 30}
+[pool]   rr3::DEFAULT: fast 10 slow 0
+[pool]   rr3::rr1: fast 10 slow 0
+[pool]   rr3::rr2: fast 10 slow 0
+[pool] keeping 180s for the refill window, then deleting
+[pool] deleted acpool_single_0410
+[pool] deleted acpool_rr3_0410
+[pool] wrote /home/ec2-user/my-project/agentcore-v2/results-seoul/endpoint_pool-0410.json

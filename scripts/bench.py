@@ -71,7 +71,7 @@ def measure_baseline_rtt(host: str, n: int = 10) -> dict:
     }
 
 
-def invoke_once(client, arn: str, session_id: str, seq: int) -> dict:
+def invoke_once(client, arn: str, session_id: str, seq: int, qualifier: str = "DEFAULT") -> dict:
     payload = json.dumps({"prompt": "ping", "seq": seq}).encode()
     t0 = time.perf_counter()
     rec = {"session_id": session_id, "seq": seq}
@@ -79,7 +79,7 @@ def invoke_once(client, arn: str, session_id: str, seq: int) -> dict:
         resp = client.invoke_agent_runtime(
             agentRuntimeArn=arn,
             runtimeSessionId=session_id,
-            qualifier="DEFAULT",
+            qualifier=qualifier,
             contentType="application/json",
             accept="application/json",
             payload=payload,
@@ -116,19 +116,19 @@ def invoke_once(client, arn: str, session_id: str, seq: int) -> dict:
     return rec
 
 
-def stop_session(client, arn: str, session_id: str) -> None:
+def stop_session(client, arn: str, session_id: str, qualifier: str = "DEFAULT") -> None:
     try:
         client.stop_runtime_session(
-            agentRuntimeArn=arn, runtimeSessionId=session_id, qualifier="DEFAULT"
+            agentRuntimeArn=arn, runtimeSessionId=session_id, qualifier=qualifier
         )
     except Exception:  # noqa: BLE001 - teardown is best-effort
         pass
 
 
-def cold_one(client, arn: str, seq: int) -> dict:
+def cold_one(client, arn: str, seq: int, qualifier: str = "DEFAULT") -> dict:
     sid = new_session_id()
-    rec = invoke_once(client, arn, sid, seq)
-    stop_session(client, arn, sid)
+    rec = invoke_once(client, arn, sid, seq, qualifier)
+    stop_session(client, arn, sid, qualifier)
     return rec
 
 

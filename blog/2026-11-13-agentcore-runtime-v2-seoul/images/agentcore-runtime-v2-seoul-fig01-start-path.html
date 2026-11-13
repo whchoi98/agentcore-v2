@@ -7,7 +7,7 @@
 html,body{margin:0;background:#fff;} svg{display:block;width:1280px;height:720px;}
 </style></head><body><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720" role="img" aria-labelledby="agentcore-runtime-v2-seoul-fig01-title agentcore-runtime-v2-seoul-fig01-desc">
 <title id="agentcore-runtime-v2-seoul-fig01-title">V1과 V2의 세션 시작 경로</title>
-<desc id="agentcore-runtime-v2-seoul-fig01-desc">V1은 세션마다 이미지 pull, 프로세스 기동, 초기화를 반복하고, V2는 런타임 생성 시 한 번 초기화한 환경의 스냅샷을 모든 세션이 복원한다</desc>
+<desc id="agentcore-runtime-v2-seoul-fig01-desc">V1은 사전 초기화 환경이 없는 새 세션마다 이미지 pull, 프로세스 기동, 초기화를 반복하고, V2는 런타임 생성 시 한 번 초기화한 환경의 스냅샷을 모든 세션이 복원한다</desc>
 <defs>
 <marker id="arrow" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto"><polygon points="0 0, 10 4, 0 8" fill="#545B64"/></marker>
 <marker id="arrow-accent" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto"><polygon points="0 0, 10 4, 0 8" fill="#EC7211"/></marker>
@@ -19,9 +19,11 @@ html,body{margin:0;background:#fff;} svg{display:block;width:1280px;height:720px
 <rect width="100%" height="100%" fill="#FFFFFF"/>
 <rect x="40" y="72" width="1200" height="256" rx="8" fill="#232F3E" fill-opacity="0.03" stroke="#232F3E" stroke-opacity="0.3" stroke-width="1.2"/>
 <text x="56" y="104" fill="#232F3E" font-size="20" font-weight="600" font-family="'Amazon Ember', 'Noto Sans CJK KR', 'Helvetica Neue', Helvetica, Arial, sans-serif" text-anchor="start">platformVersion V1</text>
-<text x="56" y="128" fill="#7D8998" font-size="16" font-weight="400" font-family="'Amazon Ember', 'Noto Sans CJK KR', 'Helvetica Neue', Helvetica, Arial, sans-serif" text-anchor="start">새 세션마다 전체 시작 절차를 반복</text>
+<text x="56" y="128" fill="#7D8998" font-size="16" font-weight="400" font-family="'Amazon Ember', 'Noto Sans CJK KR', 'Helvetica Neue', Helvetica, Arial, sans-serif" text-anchor="start">사전 초기화 환경이 소진되면 새 세션마다 전체 시작 절차를 반복</text>
 <text x="296" y="276" fill="#7D8998" font-size="16" font-weight="400" font-family="'Amazon Ember', 'Noto Sans CJK KR', 'Helvetica Neue', Helvetica, Arial, sans-serif" text-anchor="start">서울 리전 cold start p75 (이미지 크기에 비례)</text>
 <text x="296" y="304" fill="#232F3E" font-size="16" font-weight="400" font-family="'Amazon Ember Mono', 'Noto Sans CJK KR', ui-monospace, monospace" text-anchor="start">200 MB 5.37초 / 1 GB 13.41초 / 2 GB 27.51초</text>
+<text x="824" y="276" fill="#7D8998" font-size="16" font-weight="400" font-family="'Amazon Ember', 'Noto Sans CJK KR', 'Helvetica Neue', Helvetica, Arial, sans-serif" text-anchor="start">사전 초기화 환경에 배정된 세션</text>
+<text x="824" y="304" fill="#232F3E" font-size="16" font-weight="400" font-family="'Amazon Ember', 'Noto Sans CJK KR', 'Helvetica Neue', Helvetica, Arial, sans-serif" text-anchor="start">0.4초 안팎, 엔드포인트당 약 10개</text>
 <rect x="40" y="352" width="1200" height="288" rx="8" fill="#232F3E" fill-opacity="0.03" stroke="#232F3E" stroke-opacity="0.3" stroke-width="1.2"/>
 <text x="56" y="384" fill="#232F3E" font-size="20" font-weight="600" font-family="'Amazon Ember', 'Noto Sans CJK KR', 'Helvetica Neue', Helvetica, Arial, sans-serif" text-anchor="start">platformVersion V2</text>
 <text x="56" y="408" fill="#7D8998" font-size="16" font-weight="400" font-family="'Amazon Ember', 'Noto Sans CJK KR', 'Helvetica Neue', Helvetica, Arial, sans-serif" text-anchor="start">위 행은 런타임 생성/업데이트 시 1회, 아래 행은 새 세션마다</text>
@@ -72,13 +74,13 @@ html,body{margin:0;background:#fff;} svg{display:block;width:1280px;height:720px
 <rect x="608" y="552" width="168" height="72" rx="6" fill="#FFFFFF"/>
 <rect x="608" y="552" width="168" height="72" rx="6" fill="#FFFFFF" fill-opacity="1" stroke="#232F3E" stroke-opacity="1" stroke-width="1"/>
 <text x="624" y="596" fill="#232F3E" font-size="20" font-weight="600" font-family="'Amazon Ember', 'Noto Sans CJK KR', 'Helvetica Neue', Helvetica, Arial, sans-serif" text-anchor="start">첫 요청 처리</text>
-<text x="40" y="44" fill="#232F3E" font-size="20" font-weight="600" font-family="'Amazon Ember', 'Noto Sans CJK KR', 'Helvetica Neue', Helvetica, Arial, sans-serif" text-anchor="start">세션 시작 경로: V1(매 세션 전체 시작)과 V2(스냅샷 복원)</text>
+<text x="40" y="44" fill="#232F3E" font-size="20" font-weight="600" font-family="'Amazon Ember', 'Noto Sans CJK KR', 'Helvetica Neue', Helvetica, Arial, sans-serif" text-anchor="start">세션 시작 경로: V1(준비된 환경이 없으면 전체 시작)과 V2(스냅샷 복원)</text>
 <line x1="40" y1="648" x2="1240" y2="648" stroke="rgba(35,47,62,0.12)" stroke-width="0.8"/>
 <text x="40" y="676" fill="#545B64" font-size="16" font-weight="600" font-family="'Amazon Ember', 'Noto Sans CJK KR', 'Helvetica Neue', Helvetica, Arial, sans-serif" text-anchor="start">범례</text>
 <line x1="120" y1="666" x2="160" y2="666" stroke="#232F3E" stroke-width="2"/>
-<text x="172" y="672" fill="#545B64" font-size="16" font-weight="400" font-family="'Amazon Ember', 'Noto Sans CJK KR', 'Helvetica Neue', Helvetica, Arial, sans-serif" text-anchor="start">V1 시작 경로 (세션마다 반복)</text>
-<line x1="432" y1="666" x2="472" y2="666" stroke="#01A88D" stroke-width="2"/>
-<text x="484" y="672" fill="#545B64" font-size="16" font-weight="400" font-family="'Amazon Ember', 'Noto Sans CJK KR', 'Helvetica Neue', Helvetica, Arial, sans-serif" text-anchor="start">V2 시작 경로</text>
-<line x1="620" y1="666" x2="660" y2="666" stroke="#545B64" stroke-width="2" stroke-dasharray="6,4"/>
-<text x="672" y="672" fill="#545B64" font-size="16" font-weight="400" font-family="'Amazon Ember', 'Noto Sans CJK KR', 'Helvetica Neue', Helvetica, Arial, sans-serif" text-anchor="start">스냅샷 촬영 후 세션마다 참조</text>
+<text x="172" y="672" fill="#545B64" font-size="16" font-weight="400" font-family="'Amazon Ember', 'Noto Sans CJK KR', 'Helvetica Neue', Helvetica, Arial, sans-serif" text-anchor="start">V1 시작 경로 (준비된 환경이 없는 세션마다)</text>
+<line x1="536" y1="666" x2="576" y2="666" stroke="#01A88D" stroke-width="2"/>
+<text x="588" y="672" fill="#545B64" font-size="16" font-weight="400" font-family="'Amazon Ember', 'Noto Sans CJK KR', 'Helvetica Neue', Helvetica, Arial, sans-serif" text-anchor="start">V2 시작 경로</text>
+<line x1="724" y1="666" x2="764" y2="666" stroke="#545B64" stroke-width="2" stroke-dasharray="6,4"/>
+<text x="776" y="672" fill="#545B64" font-size="16" font-weight="400" font-family="'Amazon Ember', 'Noto Sans CJK KR', 'Helvetica Neue', Helvetica, Arial, sans-serif" text-anchor="start">스냅샷 촬영 후 세션마다 참조</text>
 </svg></body></html>

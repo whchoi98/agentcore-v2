@@ -272,6 +272,28 @@ cold 레그가 사전 초기화 환경을 소진하고 40초 안팎 뒤에 burst
 서울의 같은 레그는 50건 모두 성공했다. **오래 유휴인 V1 런타임은 사전 초기화 용량이 줄어든다**는 해석이
 자연스럽지만, 원인을 확인한 것은 아니다. 문서에도 이 동작은 없다.
 
+### 6.1 V1 사전 초기화 환경은 엔드포인트마다 따로 있다 (11/13 04:07~04:22 UTC 추가)
+
+공동 저자의 11/9 서울 측정(V1, 별도 1 GB 이미지, DEFAULT 1개)은 생성 직후 사전 초기화 환경 10개, cold start가
+이어지면 22, 32, 42개로 확장, 유휴 후 10개로 복귀, warm p50 0.43 s(331건) 대 cold p50 15.44 s(284건),
+초당 1건 순차 요청에서 소진 후 약 18초 만에 10개 재충전을 보였다. AWS re:Post
+"Minimizing startup latency with Amazon Bedrock AgentCore Runtime"은 "pre-warmed instances are maintained per
+endpoint"라고 적고 엔드포인트 분산(라운드 로빈)을 완화책으로 소개한다. 분산 결과 수치는 두 자료 모두에 없어서
+서울에서 직접 측정했다(`scripts/endpoint_pool_probe.py`, `results-seoul/endpoint_pool-0410.json`).
+
+- 1gb 이미지로 새 V1 런타임 2개: `single`(DEFAULT만), `rr3`(DEFAULT + rr1 + rr2, 모두 버전 1)
+- 엔드포인트 READY 후 300초 대기, 두 런타임에 새 세션 30개 동시 호출(rr3는 엔드포인트당 10개)
+
+| 구성 | 빠른(<3 s) | 느린 | 빠른 중위값 | 느린 중위값 | 빠른 세션 mono / wall |
+|---|---:|---:|---:|---:|---|
+| single | 10 | 20 | 494 ms | 13,549 ms | 3.54 s / 299.8 s |
+| rr3 | 30 (엔드포인트마다 10) | 0 | 469 ms | 없음 | 3.67 s / 292.2 s |
+
+**엔드포인트마다 10개가 따로 준비된다.** 빠른 세션은 `uptime_wall_s`가 런타임 생성 후 경과 시간(약 300초)인데
+`uptime_mono_s`는 3.5초 안팎에 멈춰 있다. V1 사전 초기화 환경은 프로세스를 띄운 뒤 일시 정지해 두었다가
+배정 시 재개하는 것으로 보인다(추정). 느린 세션은 mono와 wall이 0.4초로 같다. 엔드포인트별 생성 시 과금은
+`scripts/endpoint_pool_usage.py`로 05:30 UTC 이후 수집한다.
+
 ---
 
 ## 7. Warm 지연
