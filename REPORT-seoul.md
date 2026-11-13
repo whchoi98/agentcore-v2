@@ -20,7 +20,7 @@
 
 **V2는 서울에서 정상 동작하고, 같은 날 도쿄보다 cold start가 약 0.2~0.3초 빠르다.** 다만 이 계정에서는
 **`platformVersion`을 생략하면 서울과 도쿄 모두 여전히 V1으로 생성된다.** 발표의 "기본값 변경"은 이번
-측정 시점(2026-11-13 00:16~02:13 UTC)에 API와 AWS CLI 어느 쪽에서도 관측되지 않았다.
+측정 시점(2026-11-13 00:16~03:51 UTC)에 API와 AWS CLI 어느 쪽에서도 관측되지 않았다.
 
 | 항목 | 서울 11/13 | 도쿄 11/13 (대조군) | 도쿄 9/19 (기준) |
 |---|---:|---:|---:|
@@ -56,7 +56,7 @@ V1 대 V2의 모양은 9월과 같다. V1은 이미지 크기에 비례해 느�
 |---|---|---|---|---|
 | 서울 V2 | 미지원 | 동작 | [발표](https://aws.amazon.com/about-aws/whats-new/2026/11/new-agentcore-runtime-default/) | **확인**. 런타임 8개 생성, 실패 0건 |
 | 생성 시 기본값 | V1 | 발표는 V2, API는 V1 | 발표, [개발자 가이드](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/runtime-how-it-works.html#runtime-enable-v2) | **API는 V1** (§3) |
-| 개발자 가이드의 V2 리전 | 5곳 | 10곳, 서울 없음 | 개발자 가이드 | 문서가 발표보다 늦다 |
+| 개발자 가이드의 V2 리전 | 5곳 | 19곳, 서울 포함 (03:51 UTC 재확인. 그 전 확인에서는 10곳, 서울 없음) | 개발자 가이드 | 리전 목록은 발표와 같아졌고 기본값 문구는 V1 그대로 |
 | AWS CLI `--platform-version` | 없음 (2.33.15) | 있음 (2.38.5) | `aws ... create-agent-runtime help` | 확인 |
 | botocore | 1.43.98 | 1.44.2: `resourceConfigurations`, `hooksConfiguration`, `allowedPorts` 추가 | 서비스 모델 | 확인 |
 | CloudFormation | `platformVersion` 미지원 | `AWS::BedrockAgentCore::Runtime`에 `PlatformVersion` 속성 | `describe-type` 스키마 | 스키마만 확인, 배포는 안 함 |
@@ -97,13 +97,14 @@ V1 대 V2의 모양은 9월과 같다. V1은 이미지 크기에 비례해 느�
 | 같은 실행 | 서울 | `V2` + 환경 변수 3,584 B | 185.5 s | V2 | 생성 성공 |
 | 01:54 시작 | 도쿄 | 필드 생략 생성 (재확인) | 3.3 s | **V1** | cold 5.4~5.5 s, `boot_id` 3개 |
 | 02:13 | 서울 | AWS CLI 2.38.5로 `--platform-version` 없이 생성 | 1.4 s | **V1** | `createdAt` 02:13:24, `lastUpdatedAt` 02:13:25 |
+| 03:51 시작 | 서울 | 필드 생략 생성 (재확인) | 3.2 s | **V1** | cold 5.3~5.4 s, `boot_id` 3개 (`default_probe-ap-northeast-2-0351.json`) |
 
-마지막 행만 boto3가 아니라 AWS CLI로 만들었다(`results-seoul/default_probe-cli-0213.json`). READY 시간은
+02:13 행만 boto3가 아니라 AWS CLI로 만들었다(`results-seoul/default_probe-cli-0213.json`). READY 시간은
 `createdAt`에서 `lastUpdatedAt`까지다.
 
 정리하면 다음과 같다.
 
-- **API에서 필드를 생략하면 V1이다.** 서울과 도쿄에서 00:16부터 02:13(UTC) 사이에 다섯 번(boto3 1.44.2로 네 번,
+- **API에서 필드를 생략하면 V1이다.** 서울과 도쿄에서 00:16부터 03:51(UTC) 사이에 여섯 번(boto3 1.44.2로 다섯 번,
   AWS CLI 2.38.5로 한 번) 확인했다. AgentCore CLI(`@aws/agentcore` 1.0.2, 2026-11-06 배포)와 Python 시작 도구
   (`bedrock-agentcore-starter-toolkit` 0.3.14, 2026-10-06 배포)도 런타임 생성 시 `platformVersion`을 따로
   지정하지 않으므로 서비스 기본값을 따른다.
@@ -542,7 +543,7 @@ V2 탄력 메모리 레그의 GB-hours는 레그 종료 약 11~15분 뒤 첫 수
 | SDK | botocore 1.43.98에서 `platformVersion` 확인 | 1.44.2에 `resourceConfigurations`, `hooksConfiguration`, `allowedPorts` 추가 |
 | CLI | `--platform-version` 없음 | 2.38.5에 있음 |
 | 응답 미포함 | `create` 응답에 `platformVersion` 없음 | 그대로. `update`, `list`에도 없음 |
-| 리전 | 서울 미지원 | 서울 동작. 개발자 가이드는 아직 서울을 빼고 10곳만 표기 |
+| 리전 | 서울 미지원 | 서울 동작. 개발자 가이드도 03:51 UTC 재확인 때 서울을 포함한 19곳 표기 |
 | 기본값 | V1 | API에서는 여전히 V1 (발표와 다름) |
 
 ---
