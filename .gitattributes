@@ -1,0 +1,9 @@
+# Mask the AWS account ID in committed text files (filter is defined in .git/config)
+*.md   filter=mask-acct
+*.json filter=mask-acct
+*.log  filter=mask-acct
+*.txt  filter=mask-acct
+*.py   filter=mask-acct
+*.sh   filter=mask-acct
+*.html filter=mask-acct
+*.svg  filter=mask-acct

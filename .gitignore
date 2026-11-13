@@ -1,0 +1,11 @@
+# Python virtual environments and caches
+.venv/
+.venv-seoul/
+__pycache__/
+*.pyc
+
+# Machine-specific pointer to the diagram assets on this host
+blog/*/diagrams/.aws-diagram-assets
+
+# Intermediate SVG before icons are inlined (embed.py output is in images/)
+blog/*/diagrams/*.draft.svg
