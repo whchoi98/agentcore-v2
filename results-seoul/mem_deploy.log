@@ -1,0 +1,6 @@
+[deploy] role AgentCoreV2BenchExecutionRoleSeoul exists, trust policy refreshed
+[mem] creating acbench_mem_V1
+[mem]   acbench_mem_V1: READY in 3.2s (pv=V1)
+[mem] creating acbench_mem_V2
+[mem]   acbench_mem_V2: READY in 185.0s (pv=V2)
+mem deploy exit=0

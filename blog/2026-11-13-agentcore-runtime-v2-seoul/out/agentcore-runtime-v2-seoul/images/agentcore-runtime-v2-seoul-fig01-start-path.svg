@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720" role="img" aria-labelledby="agentcore-runtime-v2-seoul-fig01-title agentcore-runtime-v2-seoul-fig01-desc">
+<title id="agentcore-runtime-v2-seoul-fig01-title">V1과 V2의 세션 시작 경로</title>
+<desc id="agentcore-runtime-v2-seoul-fig01-desc">V1은 세션마다 이미지 pull, 프로세스 기동, 초기화를 반복하고, V2는 런타임 생성 시 한 번 초기화한 환경의 스냅샷을 모든 세션이 복원한다</desc>
+<defs>
+<marker id="arrow" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto"><polygon points="0 0, 10 4, 0 8" fill="#545B64"/></marker>
+<marker id="arrow-accent" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto"><polygon points="0 0, 10 4, 0 8" fill="#EC7211"/></marker>
+<marker id="arrow-link" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto"><polygon points="0 0, 10 4, 0 8" fill="#0972D3"/></marker>
+<marker id="arrow-ink" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto"><polygon points="0 0, 10 4, 0 8" fill="#232F3E"/></marker>
+<marker id="arrow-teal" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto"><polygon points="0 0, 10 4, 0 8" fill="#01A88D"/></marker>
+<marker id="arrow-purple" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto"><polygon points="0 0, 10 4, 0 8" fill="#8C4FFF"/></marker>
+</defs>
+<rect width="100%" height="100%" fill="#FFFFFF"/>
+<rect x="40" y="72" width="1200" height="256" rx="8" fill="#232F3E" fill-opacity="0.03" stroke="#232F3E" stroke-opacity="0.3" stroke-width="1.2"/>
+<text x="56" y="104" fill="#232F3E" font-size="20" font-weight="600" font-family="'Amazon Ember', 'Noto Sans CJK KR', 'Helvetica Neue', Helvetica, Arial, sans-serif" text-anchor="start">platformVersion V1</text>
+<text x="56" y="128" fill="#7D8998" font-size="16" font-weight="400" font-family="'Amazon Ember', 'Noto Sans CJK KR', 'Helvetica Neue', Helvetica, Arial, sans-serif" text-anchor="start">새 세션마다 전체 시작 절차를 반복</text>
+<text x="296" y="276" fill="#7D8998" font-size="16" font-weight="400" font-family="'Amazon Ember', 'Noto Sans CJK KR', 'Helvetica Neue', Helvetica, Arial, sans-serif" text-anchor="start">서울 리전 cold start p75 (이미지 크기에 비례)</text>
+<text x="296" y="304" fill="#232F3E" font-size="16" font-weight="400" font-family="'Amazon Ember Mono', 'Noto Sans CJK KR', ui-monospace, monospace" text-anchor="start">200 MB 5.37초 / 1 GB 13.41초 / 2 GB 27.51초</text>
+<rect x="40" y="352" width="1200" height="288" rx="8" fill="#232F3E" fill-opacity="0.03" stroke="#232F3E" stroke-opacity="0.3" stroke-width="1.2"/>
+<text x="56" y="384" fill="#232F3E" font-size="20" font-weight="600" font-family="'Amazon Ember', 'Noto Sans CJK KR', 'Helvetica Neue', Helvetica, Arial, sans-serif" text-anchor="start">platformVersion V2</text>
+<text x="56" y="408" fill="#7D8998" font-size="16" font-weight="400" font-family="'Amazon Ember', 'Noto Sans CJK KR', 'Helvetica Neue', Helvetica, Arial, sans-serif" text-anchor="start">위 행은 런타임 생성/업데이트 시 1회, 아래 행은 새 세션마다</text>
+<text x="808" y="440" fill="#7D8998" font-size="16" font-weight="400" font-family="'Amazon Ember', 'Noto Sans CJK KR', 'Helvetica Neue', Helvetica, Arial, sans-serif" text-anchor="start">런타임 생성에서 READY까지 185초에서 216초</text>
+<text x="808" y="468" fill="#7D8998" font-size="16" font-weight="400" font-family="'Amazon Ember', 'Noto Sans CJK KR', 'Helvetica Neue', Helvetica, Arial, sans-serif" text-anchor="start">(V1은 3.1초에서 3.3초)</text>
+<text x="808" y="576" fill="#7D8998" font-size="16" font-weight="400" font-family="'Amazon Ember', 'Noto Sans CJK KR', 'Helvetica Neue', Helvetica, Arial, sans-serif" text-anchor="start">서울 리전 cold start p75 (이미지 크기 무관)</text>
+<text x="808" y="604" fill="#01A88D" font-size="16" font-weight="400" font-family="'Amazon Ember Mono', 'Noto Sans CJK KR', ui-monospace, monospace" text-anchor="start">200 MB 1.77초 / 1 GB 1.74초 / 2 GB 1.81초</text>
+<path d="M264 196 L296 196" fill="none" stroke="#232F3E" stroke-width="1.2" marker-end="url(#arrow-ink)"/>
+<path d="M496 196 L528 196" fill="none" stroke="#232F3E" stroke-width="1.2" marker-end="url(#arrow-ink)"/>
+<path d="M728 196 L760 196" fill="none" stroke="#232F3E" stroke-width="1.2" marker-end="url(#arrow-ink)"/>
+<path d="M960 196 L992 196" fill="none" stroke="#232F3E" stroke-width="1.2" marker-end="url(#arrow-ink)"/>
+<path d="M312 452 L344 452" fill="none" stroke="#01A88D" stroke-width="1.2" marker-end="url(#arrow-teal)"/>
+<path d="M576 452 L608 452" fill="none" stroke="#01A88D" stroke-width="1.2" marker-end="url(#arrow-teal)"/>
+<path d="M312 588 L344 588" fill="none" stroke="#01A88D" stroke-width="1.2" marker-end="url(#arrow-teal)"/>
+<path d="M576 588 L608 588" fill="none" stroke="#01A88D" stroke-width="1.2" marker-end="url(#arrow-teal)"/>
+<path d="M692 488 L692 512 Q692 520 684 520 L468 520 Q460 520 460 528 L460 552" fill="none" stroke="#01A88D" stroke-width="1.2" stroke-dasharray="6,4" marker-end="url(#arrow-teal)"/>
+<rect x="64" y="160" width="200" height="72" rx="6" fill="#FFFFFF"/>
+<rect x="64" y="160" width="200" height="72" rx="6" fill="#545B64" fill-opacity="0.1" stroke="#7D8998" stroke-opacity="1" stroke-width="1"/>
+<text x="80" y="204" fill="#232F3E" font-size="20" font-weight="600" font-family="'Amazon Ember', 'Noto Sans CJK KR', 'Helvetica Neue', Helvetica, Arial, sans-serif" text-anchor="start">새 세션 요청</text>
+<rect x="296" y="160" width="200" height="72" rx="6" fill="#FFFFFF"/>
+<rect x="296" y="160" width="200" height="72" rx="6" fill="#FFFFFF" fill-opacity="1" stroke="#232F3E" stroke-opacity="1" stroke-width="1"/>
+<text x="312" y="204" fill="#232F3E" font-size="20" font-weight="600" font-family="'Amazon Ember', 'Noto Sans CJK KR', 'Helvetica Neue', Helvetica, Arial, sans-serif" text-anchor="start">이미지 pull</text>
+<rect x="528" y="160" width="200" height="72" rx="6" fill="#FFFFFF"/>
+<rect x="528" y="160" width="200" height="72" rx="6" fill="#FFFFFF" fill-opacity="1" stroke="#232F3E" stroke-opacity="1" stroke-width="1"/>
+<text x="544" y="204" fill="#232F3E" font-size="20" font-weight="600" font-family="'Amazon Ember', 'Noto Sans CJK KR', 'Helvetica Neue', Helvetica, Arial, sans-serif" text-anchor="start">프로세스 기동</text>
+<rect x="760" y="160" width="200" height="72" rx="6" fill="#FFFFFF"/>
+<rect x="760" y="160" width="200" height="72" rx="6" fill="#FFFFFF" fill-opacity="1" stroke="#232F3E" stroke-opacity="1" stroke-width="1"/>
+<text x="776" y="204" fill="#232F3E" font-size="20" font-weight="600" font-family="'Amazon Ember', 'Noto Sans CJK KR', 'Helvetica Neue', Helvetica, Arial, sans-serif" text-anchor="start">초기화 코드 실행</text>
+<rect x="992" y="160" width="200" height="72" rx="6" fill="#FFFFFF"/>
+<rect x="992" y="160" width="200" height="72" rx="6" fill="#FFFFFF" fill-opacity="1" stroke="#232F3E" stroke-opacity="1" stroke-width="1"/>
+<text x="1008" y="204" fill="#232F3E" font-size="20" font-weight="600" font-family="'Amazon Ember', 'Noto Sans CJK KR', 'Helvetica Neue', Helvetica, Arial, sans-serif" text-anchor="start">첫 요청 처리</text>
+<rect x="64" y="416" width="248" height="72" rx="6" fill="#FFFFFF"/>
+<rect x="64" y="416" width="248" height="72" rx="6" fill="#FFFFFF" fill-opacity="1" stroke="#232F3E" stroke-opacity="1" stroke-width="1"/>
+<text x="80" y="460" fill="#232F3E" font-size="20" font-weight="600" font-family="'Amazon Ember', 'Noto Sans CJK KR', 'Helvetica Neue', Helvetica, Arial, sans-serif" text-anchor="start">컨테이너 기동, 초기화</text>
+<rect x="344" y="416" width="232" height="72" rx="6" fill="#FFFFFF"/>
+<rect x="344" y="416" width="232" height="72" rx="6" fill="#FFFFFF" fill-opacity="1" stroke="#232F3E" stroke-opacity="1" stroke-width="1"/>
+<text x="360" y="448" fill="#232F3E" font-size="20" font-weight="600" font-family="'Amazon Ember', 'Noto Sans CJK KR', 'Helvetica Neue', Helvetica, Arial, sans-serif" text-anchor="start">/ping 정상 응답</text>
+<text x="360" y="472" fill="#545B64" font-size="16" font-weight="400" font-family="'Amazon Ember Mono', 'Noto Sans CJK KR', ui-monospace, monospace" text-anchor="start">120초 이내</text>
+<rect x="608" y="416" width="168" height="72" rx="6" fill="#FFFFFF"/>
+<rect x="608" y="416" width="168" height="72" rx="6" fill="#FFFFFF" fill-opacity="1" stroke="#232F3E" stroke-opacity="1" stroke-width="1"/>
+<text x="624" y="460" fill="#232F3E" font-size="20" font-weight="600" font-family="'Amazon Ember', 'Noto Sans CJK KR', 'Helvetica Neue', Helvetica, Arial, sans-serif" text-anchor="start">스냅샷 촬영</text>
+<rect x="64" y="552" width="248" height="72" rx="6" fill="#FFFFFF"/>
+<rect x="64" y="552" width="248" height="72" rx="6" fill="#545B64" fill-opacity="0.1" stroke="#7D8998" stroke-opacity="1" stroke-width="1"/>
+<text x="80" y="596" fill="#232F3E" font-size="20" font-weight="600" font-family="'Amazon Ember', 'Noto Sans CJK KR', 'Helvetica Neue', Helvetica, Arial, sans-serif" text-anchor="start">새 세션 요청</text>
+<rect x="344" y="552" width="232" height="72" rx="6" fill="#FFFFFF"/>
+<rect x="344" y="552" width="232" height="72" rx="6" fill="#FFFFFF" fill-opacity="1" stroke="#232F3E" stroke-opacity="1" stroke-width="1"/>
+<text x="360" y="596" fill="#232F3E" font-size="20" font-weight="600" font-family="'Amazon Ember', 'Noto Sans CJK KR', 'Helvetica Neue', Helvetica, Arial, sans-serif" text-anchor="start">스냅샷 복원</text>
+<rect x="608" y="552" width="168" height="72" rx="6" fill="#FFFFFF"/>
+<rect x="608" y="552" width="168" height="72" rx="6" fill="#FFFFFF" fill-opacity="1" stroke="#232F3E" stroke-opacity="1" stroke-width="1"/>
+<text x="624" y="596" fill="#232F3E" font-size="20" font-weight="600" font-family="'Amazon Ember', 'Noto Sans CJK KR', 'Helvetica Neue', Helvetica, Arial, sans-serif" text-anchor="start">첫 요청 처리</text>
+<text x="40" y="44" fill="#232F3E" font-size="20" font-weight="600" font-family="'Amazon Ember', 'Noto Sans CJK KR', 'Helvetica Neue', Helvetica, Arial, sans-serif" text-anchor="start">세션 시작 경로: V1(매 세션 전체 시작)과 V2(스냅샷 복원)</text>
+<line x1="40" y1="648" x2="1240" y2="648" stroke="rgba(35,47,62,0.12)" stroke-width="0.8"/>
+<text x="40" y="676" fill="#545B64" font-size="16" font-weight="600" font-family="'Amazon Ember', 'Noto Sans CJK KR', 'Helvetica Neue', Helvetica, Arial, sans-serif" text-anchor="start">범례</text>
+<line x1="120" y1="666" x2="160" y2="666" stroke="#232F3E" stroke-width="2"/>
+<text x="172" y="672" fill="#545B64" font-size="16" font-weight="400" font-family="'Amazon Ember', 'Noto Sans CJK KR', 'Helvetica Neue', Helvetica, Arial, sans-serif" text-anchor="start">V1 시작 경로 (세션마다 반복)</text>
+<line x1="432" y1="666" x2="472" y2="666" stroke="#01A88D" stroke-width="2"/>
+<text x="484" y="672" fill="#545B64" font-size="16" font-weight="400" font-family="'Amazon Ember', 'Noto Sans CJK KR', 'Helvetica Neue', Helvetica, Arial, sans-serif" text-anchor="start">V2 시작 경로</text>
+<line x1="620" y1="666" x2="660" y2="666" stroke="#545B64" stroke-width="2" stroke-dasharray="6,4"/>
+<text x="672" y="672" fill="#545B64" font-size="16" font-weight="400" font-family="'Amazon Ember', 'Noto Sans CJK KR', 'Helvetica Neue', Helvetica, Arial, sans-serif" text-anchor="start">스냅샷 촬영 후 세션마다 참조</text>
+</svg>

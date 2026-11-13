@@ -1,0 +1,10 @@
+[rtt] {'host': 'bedrock-agentcore.ap-northeast-1.amazonaws.com', 'samples': 10, 'tcp_connect_ms_median': 36.45, 'tcp_tls_ms_median': 72.8}
+[warm] acbench_200mb_V2: 1 cold + 30 warm invokes on one session
+[warm]   cold_first=1947.76ms warm p50=175.2 p75=188.8 p99=233.2 ms | handler_p75=0.1ms
+[bench] quiet gap 90s
+[warm] acbench_1gb_V2: 1 cold + 30 warm invokes on one session
+[warm]   cold_first=1962.63ms warm p50=159.7 p75=166.1 p99=187.9 ms | handler_p75=0.1ms
+[bench] quiet gap 90s
+[warm] acbench_2gb_V2: 1 cold + 30 warm invokes on one session
+[warm]   cold_first=1729.45ms warm p50=159.8 p75=178.4 p99=190.6 ms | handler_p75=0.1ms
+[bench] wrote /home/ec2-user/my-project/agentcore-v2/results-tokyo-1113-gap/bench-warm.json

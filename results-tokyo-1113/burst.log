@@ -1,0 +1,14 @@
+[rtt] {'host': 'bedrock-agentcore.ap-northeast-1.amazonaws.com', 'samples': 10, 'tcp_connect_ms_median': 36.53, 'tcp_tls_ms_median': 72.86}
+[burst] acbench_200mb_V1: 50 simultaneous cold sessions
+[burst]   p50=5478.2 p75=5510.3 p99=5580.6 ms | ok=50/50 throttled=0 | boot_ids=50 | wall=5.8s
+[burst] acbench_200mb_V2: 50 simultaneous cold sessions
+[burst]   p50=1955.9 p75=2096.9 p99=3182.3 ms | ok=50/50 throttled=0 | boot_ids=2 | wall=3.4s
+[burst] acbench_1gb_V1: 50 simultaneous cold sessions
+[burst]   p50=13554.9 p75=15484.4 p99=19504.0 ms | ok=50/50 throttled=0 | boot_ids=50 | wall=19.7s
+[burst] acbench_1gb_V2: 50 simultaneous cold sessions
+[burst]   p50=1877.8 p75=2058.5 p99=2905.2 ms | ok=50/50 throttled=0 | boot_ids=2 | wall=3.2s
+[burst] acbench_2gb_V1: 50 simultaneous cold sessions
+[burst]   p50=27614.9 p75=29511.3 p99=31662.4 ms | ok=48/50 throttled=0 | boot_ids=48 | wall=131.0s
+[burst] acbench_2gb_V2: 50 simultaneous cold sessions
+[burst]   p50=1961.7 p75=2194.5 p99=3148.2 ms | ok=50/50 throttled=0 | boot_ids=2 | wall=3.5s
+[bench] wrote /home/ec2-user/my-project/agentcore-v2/results-tokyo-1113/bench-burst.json

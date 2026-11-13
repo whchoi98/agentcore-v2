@@ -1,0 +1,22 @@
+{
+  "acbench_mem_V1": {
+    "version": "V1",
+    "platform_version_field_sent": "V1",
+    "runtime_id": "acbench_mem_V1-4BItVvGlrT",
+    "arn": "arn:aws:bedrock-agentcore:ap-northeast-2:061525506XXX:runtime/acbench_mem_V1-4BItVvGlrT",
+    "status": "READY",
+    "ready_s": 3.16,
+    "idle_timeout_s": 180,
+    "max_lifetime_s": 300
+  },
+  "acbench_mem_V2": {
+    "version": "V2",
+    "platform_version_field_sent": "V2",
+    "runtime_id": "acbench_mem_V2-OWZuz9DcWn",
+    "arn": "arn:aws:bedrock-agentcore:ap-northeast-2:061525506XXX:runtime/acbench_mem_V2-OWZuz9DcWn",
+    "status": "READY",
+    "ready_s": 185.01,
+    "idle_timeout_s": 180,
+    "max_lifetime_s": 300
+  }
+}

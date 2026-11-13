@@ -1,0 +1,13 @@
+[mem] acbench_mem_V1:alloc: 4 sessions, 1536 MB spike, idle 90.0s
+[mem]   invoke_ms=[3108.5, 3127.2, 3104.3, 3128.3] rss_profile={'alloc_mb_requested': 1536, 'rss_before_mb': 50.4, 'rss_peak_mb': 1593.4, 'rss_after_free_mb': 52.5, 'hold_s': 2.0}
+[mem] quiet gap 150s
+[mem] acbench_mem_V1:control: 4 sessions, 0 MB spike, idle 90.0s
+[mem]   invoke_ms=[390.5, 346.5, 418.9, 354.0] rss_profile=None
+[mem] quiet gap 150s
+[mem] acbench_mem_V2:alloc: 4 sessions, 1536 MB spike, idle 90.0s
+[mem]   invoke_ms=[4747.7, 4755.7, 4750.1, 4774.7] rss_profile={'alloc_mb_requested': 1536, 'rss_before_mb': 51.6, 'rss_peak_mb': 1594.6, 'rss_after_free_mb': 53.7, 'hold_s': 2.0}
+[mem] quiet gap 150s
+[mem] acbench_mem_V2:control: 4 sessions, 0 MB spike, idle 90.0s
+[mem]   invoke_ms=[1663.7, 1443.0, 1679.6, 1677.2] rss_profile=None
+[mem] wrote /home/ec2-user/my-project/agentcore-v2/results-seoul/mem_runs.json
+mem run exit=0

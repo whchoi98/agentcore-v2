@@ -1,0 +1,720 @@
+{
+  "region": "ap-northeast-2",
+  "dimension_sets_seen": {
+    "OverheadLatency": [
+      [
+        "Name",
+        "Operation",
+        "Resource"
+      ]
+    ],
+    "Latency": [
+      [
+        "ComputeType",
+        "Name",
+        "Operation",
+        "Resource"
+      ],
+      [
+        "Method",
+        "Name",
+        "Operation",
+        "Protocol"
+      ],
+      [
+        "Method",
+        "Name",
+        "Operation",
+        "Protocol",
+        "Resource"
+      ],
+      [
+        "Method",
+        "Operation",
+        "Protocol"
+      ],
+      [
+        "Method",
+        "Operation",
+        "Protocol",
+        "Resource"
+      ],
+      [
+        "Name",
+        "Operation",
+        "Resource"
+      ],
+      [
+        "Operation"
+      ],
+      [
+        "Operation",
+        "Protocol"
+      ],
+      [
+        "Operation",
+        "Protocol",
+        "Resource"
+      ],
+      [
+        "Operation",
+        "Protocol",
+        "TargetType"
+      ],
+      [
+        "Operation",
+        "Resource"
+      ]
+    ]
+  },
+  "rows": [
+    {
+      "scenario": "cold",
+      "runtime": "acbench_200mb_V1",
+      "version": "V1",
+      "client_p50_ms": 594.8,
+      "client_p75_ms": 5336.3,
+      "client_samples": 30,
+      "window": "leg",
+      "window_start_utc": "2026-11-13T01:07:05.031617+00:00",
+      "window_end_utc": "2026-11-13T01:08:22.485803+00:00",
+      "OverheadLatency": {},
+      "OverheadLatency_dims": null,
+      "Latency": {
+        "unit": "Milliseconds",
+        "samples": 30.0,
+        "avg": 2879.4,
+        "min": 309.0,
+        "max": 5444.0,
+        "p99": 5439.0,
+        "p90": 5394.5,
+        "p50": 593.3,
+        "p75": 5321.1
+      },
+      "Latency_dims": [
+        "Resource",
+        "Operation",
+        "Name"
+      ]
+    },
+    {
+      "scenario": "cold",
+      "runtime": "acbench_200mb_V2",
+      "version": "V2",
+      "client_p50_ms": 1574.9,
+      "client_p75_ms": 1691.2,
+      "client_samples": 30,
+      "window": "leg",
+      "window_start_utc": "2026-11-13T01:08:53.485937+00:00",
+      "window_end_utc": "2026-11-13T01:10:03.511794+00:00",
+      "OverheadLatency": {
+        "unit": "Milliseconds",
+        "samples": 30.0,
+        "avg": 1497.1,
+        "min": 1342.0,
+        "max": 1867.0,
+        "p99": 1865.6,
+        "p90": 1692.9,
+        "p50": 1473.7,
+        "p75": 1592.3
+      },
+      "OverheadLatency_dims": [
+        "Resource",
+        "Operation",
+        "Name"
+      ],
+      "Latency": {
+        "unit": "Milliseconds",
+        "samples": 30.0,
+        "avg": 1582.5,
+        "min": 1388.0,
+        "max": 2096.0,
+        "p99": 2081.6,
+        "p90": 1827.0,
+        "p50": 1579.5,
+        "p75": 1685.6
+      },
+      "Latency_dims": [
+        "Resource",
+        "Operation",
+        "Name"
+      ]
+    },
+    {
+      "scenario": "cold",
+      "runtime": "acbench_1gb_V1",
+      "version": "V1",
+      "client_p50_ms": 1278.5,
+      "client_p75_ms": 13416.5,
+      "client_samples": 30,
+      "window": "leg",
+      "window_start_utc": "2026-11-13T01:10:34.511924+00:00",
+      "window_end_utc": "2026-11-13T01:12:06.661924+00:00",
+      "OverheadLatency": {},
+      "OverheadLatency_dims": null,
+      "Latency": {
+        "unit": "Milliseconds",
+        "samples": 30.0,
+        "avg": 5277.3,
+        "min": 725.0,
+        "max": 13494.0,
+        "p99": 13464.0,
+        "p90": 13196.6,
+        "p50": 1271.9,
+        "p75": 12762.7
+      },
+      "Latency_dims": [
+        "Resource",
+        "Operation",
+        "Name"
+      ]
+    },
+    {
+      "scenario": "cold",
+      "runtime": "acbench_1gb_V2",
+      "version": "V2",
+      "client_p50_ms": 1757.8,
+      "client_p75_ms": 1881.7,
+      "client_samples": 30,
+      "window": "leg",
+      "window_start_utc": "2026-11-13T01:12:37.662055+00:00",
+      "window_end_utc": "2026-11-13T01:13:49.049470+00:00",
+      "OverheadLatency": {
+        "unit": "Milliseconds",
+        "samples": 30.0,
+        "avg": 1619.4,
+        "min": 1344.0,
+        "max": 2049.0,
+        "p99": 2048.8,
+        "p90": 1922.3,
+        "p50": 1598.8,
+        "p75": 1742.0
+      },
+      "OverheadLatency_dims": [
+        "Resource",
+        "Operation",
+        "Name"
+      ],
+      "Latency": {
+        "unit": "Milliseconds",
+        "samples": 30.0,
+        "avg": 1719.4,
+        "min": 1364.0,
+        "max": 2195.0,
+        "p99": 2172.4,
+        "p90": 2009.7,
+        "p50": 1710.9,
+        "p75": 1852.3
+      },
+      "Latency_dims": [
+        "Resource",
+        "Operation",
+        "Name"
+      ]
+    },
+    {
+      "scenario": "cold",
+      "runtime": "acbench_2gb_V1",
+      "version": "V1",
+      "client_p50_ms": 1738.8,
+      "client_p75_ms": 29493.1,
+      "client_samples": 30,
+      "window": "leg",
+      "window_start_utc": "2026-11-13T01:14:20.049603+00:00",
+      "window_end_utc": "2026-11-13T01:16:24.459579+00:00",
+      "OverheadLatency": {},
+      "OverheadLatency_dims": null,
+      "Latency": {
+        "unit": "Milliseconds",
+        "samples": 30.0,
+        "avg": 10737.0,
+        "min": 384.0,
+        "max": 33482.0,
+        "p99": 33182.5,
+        "p90": 30981.8,
+        "p50": 1747.5,
+        "p75": 28165.3
+      },
+      "Latency_dims": [
+        "Resource",
+        "Operation",
+        "Name"
+      ]
+    },
+    {
+      "scenario": "cold",
+      "runtime": "acbench_2gb_V2",
+      "version": "V2",
+      "client_p50_ms": 1677.0,
+      "client_p75_ms": 1936.0,
+      "client_samples": 30,
+      "window": "leg",
+      "window_start_utc": "2026-11-13T01:16:55.459711+00:00",
+      "window_end_utc": "2026-11-13T01:18:06.524971+00:00",
+      "OverheadLatency": {
+        "unit": "Milliseconds",
+        "samples": 30.0,
+        "avg": 1638.1,
+        "min": 1407.0,
+        "max": 1985.0,
+        "p99": 1977.4,
+        "p90": 1910.4,
+        "p50": 1581.5,
+        "p75": 1775.5
+      },
+      "OverheadLatency_dims": [
+        "Resource",
+        "Operation",
+        "Name"
+      ],
+      "Latency": {
+        "unit": "Milliseconds",
+        "samples": 30.0,
+        "avg": 1743.7,
+        "min": 1441.0,
+        "max": 2385.0,
+        "p99": 2344.7,
+        "p90": 2048.4,
+        "p50": 1692.9,
+        "p75": 1907.1
+      },
+      "Latency_dims": [
+        "Resource",
+        "Operation",
+        "Name"
+      ]
+    },
+    {
+      "scenario": "burst",
+      "runtime": "acbench_200mb_V1",
+      "version": "V1",
+      "client_p50_ms": 5341.8,
+      "client_p75_ms": 5386.5,
+      "client_samples": 50,
+      "window": "leg",
+      "window_start_utc": "2026-11-13T01:19:37.785910+00:00",
+      "window_end_utc": "2026-11-13T01:20:42.457094+00:00",
+      "OverheadLatency": {},
+      "OverheadLatency_dims": null,
+      "Latency": {
+        "unit": "Milliseconds",
+        "samples": 50.0,
+        "avg": 4349.3,
+        "min": 334.0,
+        "max": 5474.0,
+        "p99": 5470.4,
+        "p90": 5438.6,
+        "p50": 5253.8,
+        "p75": 5385.9
+      },
+      "Latency_dims": [
+        "Resource",
+        "Operation",
+        "Name"
+      ]
+    },
+    {
+      "scenario": "burst",
+      "runtime": "acbench_200mb_V2",
+      "version": "V2",
+      "client_p50_ms": 1648.4,
+      "client_p75_ms": 1818.7,
+      "client_samples": 50,
+      "window": "leg",
+      "window_start_utc": "2026-11-13T01:21:13.457363+00:00",
+      "window_end_utc": "2026-11-13T01:22:15.188067+00:00",
+      "OverheadLatency": {
+        "unit": "Milliseconds",
+        "samples": 50.0,
+        "avg": 1572.8,
+        "min": 1361.0,
+        "max": 2440.0,
+        "p99": 2344.8,
+        "p90": 1809.7,
+        "p50": 1539.0,
+        "p75": 1686.7
+      },
+      "OverheadLatency_dims": [
+        "Resource",
+        "Operation",
+        "Name"
+      ],
+      "Latency": {
+        "unit": "Milliseconds",
+        "samples": 50.0,
+        "avg": 1662.9,
+        "min": 1388.0,
+        "max": 2516.0,
+        "p99": 2497.2,
+        "p90": 1953.1,
+        "p50": 1620.0,
+        "p75": 1791.0
+      },
+      "Latency_dims": [
+        "Resource",
+        "Operation",
+        "Name"
+      ]
+    },
+    {
+      "scenario": "burst",
+      "runtime": "acbench_1gb_V1",
+      "version": "V1",
+      "client_p50_ms": 13437.4,
+      "client_p75_ms": 13566.5,
+      "client_samples": 50,
+      "window": "leg",
+      "window_start_utc": "2026-11-13T01:22:46.188203+00:00",
+      "window_end_utc": "2026-11-13T01:24:01.014966+00:00",
+      "OverheadLatency": {},
+      "OverheadLatency_dims": null,
+      "Latency": {
+        "unit": "Milliseconds",
+        "samples": 50.0,
+        "avg": 8563.7,
+        "min": 348.0,
+        "max": 15667.0,
+        "p99": 15602.5,
+        "p90": 13730.2,
+        "p50": 12759.6,
+        "p75": 13357.8
+      },
+      "Latency_dims": [
+        "Resource",
+        "Operation",
+        "Name"
+      ]
+    },
+    {
+      "scenario": "burst",
+      "runtime": "acbench_1gb_V2",
+      "version": "V2",
+      "client_p50_ms": 1735.2,
+      "client_p75_ms": 1877.0,
+      "client_samples": 50,
+      "window": "leg",
+      "window_start_utc": "2026-11-13T01:24:32.015104+00:00",
+      "window_end_utc": "2026-11-13T01:25:33.437246+00:00",
+      "OverheadLatency": {
+        "unit": "Milliseconds",
+        "samples": 50.0,
+        "avg": 1630.0,
+        "min": 1357.0,
+        "max": 2117.0,
+        "p99": 2082.4,
+        "p90": 1862.2,
+        "p50": 1609.0,
+        "p75": 1754.5
+      },
+      "OverheadLatency_dims": [
+        "Resource",
+        "Operation",
+        "Name"
+      ],
+      "Latency": {
+        "unit": "Milliseconds",
+        "samples": 50.0,
+        "avg": 1710.4,
+        "min": 1378.0,
+        "max": 2211.0,
+        "p99": 2128.1,
+        "p90": 1971.8,
+        "p50": 1703.7,
+        "p75": 1844.5
+      },
+      "Latency_dims": [
+        "Resource",
+        "Operation",
+        "Name"
+      ]
+    },
+    {
+      "scenario": "burst",
+      "runtime": "acbench_2gb_V1",
+      "version": "V1",
+      "client_p50_ms": 27513.5,
+      "client_p75_ms": 27571.2,
+      "client_samples": 50,
+      "window": "leg",
+      "window_start_utc": "2026-11-13T01:26:04.437374+00:00",
+      "window_end_utc": "2026-11-13T01:27:31.337143+00:00",
+      "OverheadLatency": {},
+      "OverheadLatency_dims": null,
+      "Latency": {
+        "unit": "Milliseconds",
+        "samples": 50.0,
+        "avg": 22184.1,
+        "min": 425.0,
+        "max": 27721.0,
+        "p99": 27710.0,
+        "p90": 27611.2,
+        "p50": 27176.2,
+        "p75": 27447.3
+      },
+      "Latency_dims": [
+        "Resource",
+        "Operation",
+        "Name"
+      ]
+    },
+    {
+      "scenario": "burst",
+      "runtime": "acbench_2gb_V2",
+      "version": "V2",
+      "client_p50_ms": 1762.0,
+      "client_p75_ms": 1894.1,
+      "client_samples": 50,
+      "window": "leg",
+      "window_start_utc": "2026-11-13T01:28:02.337271+00:00",
+      "window_end_utc": "2026-11-13T01:29:03.633028+00:00",
+      "OverheadLatency": {
+        "unit": "Milliseconds",
+        "samples": 50.0,
+        "avg": 1630.7,
+        "min": 1380.0,
+        "max": 1990.0,
+        "p99": 1980.6,
+        "p90": 1897.8,
+        "p50": 1623.8,
+        "p75": 1775.5
+      },
+      "OverheadLatency_dims": [
+        "Resource",
+        "Operation",
+        "Name"
+      ],
+      "Latency": {
+        "unit": "Milliseconds",
+        "samples": 50.0,
+        "avg": 1709.5,
+        "min": 1400.0,
+        "max": 2069.0,
+        "p99": 2058.7,
+        "p90": 1984.3,
+        "p50": 1716.1,
+        "p75": 1869.6
+      },
+      "Latency_dims": [
+        "Resource",
+        "Operation",
+        "Name"
+      ]
+    },
+    {
+      "scenario": "warm",
+      "runtime": "acbench_200mb_V1",
+      "version": "V1",
+      "client_p50_ms": 87.9,
+      "client_p75_ms": 94.2,
+      "client_samples": 30,
+      "window": "leg",
+      "window_start_utc": "2026-11-13T01:30:34.896220+00:00",
+      "window_end_utc": "2026-11-13T01:31:36.984468+00:00",
+      "OverheadLatency": {},
+      "OverheadLatency_dims": null,
+      "Latency": {
+        "unit": "Milliseconds",
+        "samples": 31.0,
+        "avg": 70.2,
+        "min": 31.0,
+        "max": 378.0,
+        "p99": 375.0,
+        "p90": 77.0,
+        "p50": 64.9,
+        "p75": 71.4
+      },
+      "Latency_dims": [
+        "Resource",
+        "Operation",
+        "Name"
+      ]
+    },
+    {
+      "scenario": "warm",
+      "runtime": "acbench_200mb_V2",
+      "version": "V2",
+      "client_p50_ms": 106.1,
+      "client_p75_ms": 112.1,
+      "client_samples": 30,
+      "window": "leg",
+      "window_start_utc": "2026-11-13T01:32:07.984594+00:00",
+      "window_end_utc": "2026-11-13T01:33:11.750637+00:00",
+      "OverheadLatency": {
+        "unit": "Milliseconds",
+        "samples": 31.0,
+        "avg": 104.9,
+        "min": 32.0,
+        "max": 1452.0,
+        "p99": 1435.4,
+        "p90": 78.5,
+        "p50": 62.4,
+        "p75": 72.0
+      },
+      "OverheadLatency_dims": [
+        "Resource",
+        "Operation",
+        "Name"
+      ],
+      "Latency": {
+        "unit": "Milliseconds",
+        "samples": 31.0,
+        "avg": 123.2,
+        "min": 38.0,
+        "max": 1538.0,
+        "p99": 1493.5,
+        "p90": 101.3,
+        "p50": 81.8,
+        "p75": 91.4
+      },
+      "Latency_dims": [
+        "Resource",
+        "Operation",
+        "Name"
+      ]
+    },
+    {
+      "scenario": "warm",
+      "runtime": "acbench_1gb_V1",
+      "version": "V1",
+      "client_p50_ms": 79.7,
+      "client_p75_ms": 88.6,
+      "client_samples": 30,
+      "window": "leg",
+      "window_start_utc": "2026-11-13T01:33:42.750768+00:00",
+      "window_end_utc": "2026-11-13T01:34:44.800084+00:00",
+      "OverheadLatency": {},
+      "OverheadLatency_dims": null,
+      "Latency": {
+        "unit": "Milliseconds",
+        "samples": 31.0,
+        "avg": 68.7,
+        "min": 31.0,
+        "max": 417.0,
+        "p99": 413.3,
+        "p90": 72.2,
+        "p50": 56.4,
+        "p75": 63.4
+      },
+      "Latency_dims": [
+        "Resource",
+        "Operation",
+        "Name"
+      ]
+    },
+    {
+      "scenario": "warm",
+      "runtime": "acbench_1gb_V2",
+      "version": "V2",
+      "client_p50_ms": 100.5,
+      "client_p75_ms": 112.0,
+      "client_samples": 30,
+      "window": "leg",
+      "window_start_utc": "2026-11-13T01:35:15.800215+00:00",
+      "window_end_utc": "2026-11-13T01:36:20.044027+00:00",
+      "OverheadLatency": {
+        "unit": "Milliseconds",
+        "samples": 31.0,
+        "avg": 119.6,
+        "min": 34.0,
+        "max": 1978.0,
+        "p99": 1941.3,
+        "p90": 76.1,
+        "p50": 57.0,
+        "p75": 64.4
+      },
+      "OverheadLatency_dims": [
+        "Resource",
+        "Operation",
+        "Name"
+      ],
+      "Latency": {
+        "unit": "Milliseconds",
+        "samples": 31.0,
+        "avg": 137.1,
+        "min": 40.0,
+        "max": 2063.0,
+        "p99": 2058.5,
+        "p90": 93.7,
+        "p50": 75.4,
+        "p75": 84.4
+      },
+      "Latency_dims": [
+        "Resource",
+        "Operation",
+        "Name"
+      ]
+    },
+    {
+      "scenario": "warm",
+      "runtime": "acbench_2gb_V1",
+      "version": "V1",
+      "client_p50_ms": 79.8,
+      "client_p75_ms": 87.7,
+      "client_samples": 30,
+      "window": "leg",
+      "window_start_utc": "2026-11-13T01:36:51.044156+00:00",
+      "window_end_utc": "2026-11-13T01:37:52.978440+00:00",
+      "OverheadLatency": {},
+      "OverheadLatency_dims": null,
+      "Latency": {
+        "unit": "Milliseconds",
+        "samples": 31.0,
+        "avg": 65.5,
+        "min": 32.0,
+        "max": 422.0,
+        "p99": 416.7,
+        "p90": 66.2,
+        "p50": 57.2,
+        "p75": 62.1
+      },
+      "Latency_dims": [
+        "Resource",
+        "Operation",
+        "Name"
+      ]
+    },
+    {
+      "scenario": "warm",
+      "runtime": "acbench_2gb_V2",
+      "version": "V2",
+      "client_p50_ms": 101.0,
+      "client_p75_ms": 110.7,
+      "client_samples": 30,
+      "window": "leg",
+      "window_start_utc": "2026-11-13T01:38:23.978569+00:00",
+      "window_end_utc": "2026-11-13T01:39:27.917302+00:00",
+      "OverheadLatency": {
+        "unit": "Milliseconds",
+        "samples": 31.0,
+        "avg": 109.8,
+        "min": 34.0,
+        "max": 1660.0,
+        "p99": 1621.5,
+        "p90": 79.4,
+        "p50": 58.5,
+        "p75": 66.7
+      },
+      "OverheadLatency_dims": [
+        "Resource",
+        "Operation",
+        "Name"
+      ],
+      "Latency": {
+        "unit": "Milliseconds",
+        "samples": 31.0,
+        "avg": 128.4,
+        "min": 39.0,
+        "max": 1745.0,
+        "p99": 1728.7,
+        "p90": 101.3,
+        "p50": 77.8,
+        "p75": 85.8
+      },
+      "Latency_dims": [
+        "Resource",
+        "Operation",
+        "Name"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+[rtt] {'host': 'bedrock-agentcore.ap-northeast-2.amazonaws.com', 'samples': 10, 'tcp_connect_ms_median': 2.35, 'tcp_tls_ms_median': 4.68}
+[burst] acbench_200mb_V1: 50 simultaneous cold sessions
+[burst]   p50=5341.8 p75=5386.5 p99=5527.1 ms | ok=50/50 throttled=0 | boot_ids=50 | wall=5.7s
+[bench] quiet gap 90s
+[burst] acbench_200mb_V2: 50 simultaneous cold sessions
+[burst]   p50=1648.4 p75=1818.7 p99=2535.7 ms | ok=50/50 throttled=0 | boot_ids=2 | wall=2.7s
+[bench] quiet gap 90s
+[burst] acbench_1gb_V1: 50 simultaneous cold sessions
+[burst]   p50=13437.4 p75=13566.5 p99=15691.0 ms | ok=50/50 throttled=0 | boot_ids=50 | wall=15.8s
+[bench] quiet gap 90s
+[burst] acbench_1gb_V2: 50 simultaneous cold sessions
+[burst]   p50=1735.2 p75=1877.0 p99=2234.6 ms | ok=50/50 throttled=0 | boot_ids=2 | wall=2.4s
+[bench] quiet gap 90s
+[burst] acbench_2gb_V1: 50 simultaneous cold sessions
+[burst]   p50=27513.5 p75=27571.2 p99=27741.6 ms | ok=50/50 throttled=0 | boot_ids=50 | wall=27.9s
+[bench] quiet gap 90s
+[burst] acbench_2gb_V2: 50 simultaneous cold sessions
+[burst]   p50=1762.0 p75=1894.1 p99=2101.6 ms | ok=50/50 throttled=0 | boot_ids=2 | wall=2.3s
+[bench] wrote /home/ec2-user/my-project/agentcore-v2/results-seoul-gap/bench-burst.json

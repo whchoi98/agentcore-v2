@@ -1,0 +1,14 @@
+[deploy] created role AgentCoreV2BenchExecutionRole
+[deploy] creating acbench_200mb_V1 (V1, 200mb)
+[deploy]   acbench_200mb_V1: READY in 3.3s (api call 0.93s, platformVersion=V1)
+[deploy] creating acbench_200mb_V2 (V2, 200mb)
+[deploy]   acbench_200mb_V2: READY in 185.7s (api call 0.73s, platformVersion=V2)
+[deploy] creating acbench_1gb_V1 (V1, 1gb)
+[deploy]   acbench_1gb_V1: READY in 3.3s (api call 0.85s, platformVersion=V1)
+[deploy] creating acbench_1gb_V2 (V2, 1gb)
+[deploy]   acbench_1gb_V2: READY in 200.9s (api call 0.69s, platformVersion=V2)
+[deploy] creating acbench_2gb_V1 (V1, 2gb)
+[deploy]   acbench_2gb_V1: READY in 3.3s (api call 0.75s, platformVersion=V1)
+[deploy] creating acbench_2gb_V2 (V2, 2gb)
+[deploy]   acbench_2gb_V2: READY in 216.6s (api call 0.74s, platformVersion=V2)
+[deploy] wrote /home/ec2-user/my-project/agentcore-v2/results/runtimes.json

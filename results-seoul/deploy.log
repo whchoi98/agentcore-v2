@@ -1,0 +1,15 @@
+[deploy] role AgentCoreV2BenchExecutionRoleSeoul exists, trust policy refreshed
+[deploy] creating acbench_200mb_V1 (V1, 200mb)
+[deploy]   acbench_200mb_V1: READY in 3.2s (api call 0.60s, platformVersion=V1)
+[deploy] creating acbench_200mb_V2 (V2, 200mb)
+[deploy]   acbench_200mb_V2: READY in 185.4s (api call 0.60s, platformVersion=V2)
+[deploy] creating acbench_1gb_V1 (V1, 1gb)
+[deploy]   acbench_1gb_V1: READY in 3.1s (api call 0.66s, platformVersion=V1)
+[deploy] creating acbench_1gb_V2 (V2, 1gb)
+[deploy]   acbench_1gb_V2: READY in 200.4s (api call 0.61s, platformVersion=V2)
+[deploy] creating acbench_2gb_V1 (V1, 2gb)
+[deploy]   acbench_2gb_V1: READY in 3.3s (api call 0.56s, platformVersion=V1)
+[deploy] creating acbench_2gb_V2 (V2, 2gb)
+[deploy]   acbench_2gb_V2: READY in 215.8s (api call 0.61s, platformVersion=V2)
+[deploy] wrote /home/ec2-user/my-project/agentcore-v2/results-seoul/runtimes.json
+deploy exit=0

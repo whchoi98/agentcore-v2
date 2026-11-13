@@ -1,0 +1,96 @@
+<!doctype html><html lang="ko"><head><meta charset="utf-8"><title>측정 구성</title>
+<style>
+@font-face{font-family:'Amazon Ember';font-weight:400;src:local('Amazon Ember'),local('AmazonEmber-Regular');}
+@font-face{font-family:'Amazon Ember';font-weight:600;src:local('Amazon Ember Medium'),local('Amazon Ember SemiBold'),local('Amazon Ember Bold');}
+@font-face{font-family:'Amazon Ember';font-weight:700;src:local('Amazon Ember Bold');}
+@font-face{font-family:'Amazon Ember Mono';font-weight:400;src:local('Amazon Ember Mono'),local('AmazonEmberMono-Regular');}
+html,body{margin:0;background:#fff;} svg{display:block;width:1280px;height:720px;}
+</style></head><body><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720" role="img" aria-labelledby="agentcore-runtime-v2-fig02-title agentcore-runtime-v2-fig02-desc">
+<title id="agentcore-runtime-v2-fig02-title">측정 구성</title>
+<desc id="agentcore-runtime-v2-fig02-desc">서울 리전 EC2 클라이언트가 도쿄 리전의 AgentCore Runtime 6개(이미지 3종 × V1, V2)를 호출하고 과금 사용량은 CloudWatch 지표로 수집한다</desc>
+<defs>
+<marker id="arrow" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto"><polygon points="0 0, 10 4, 0 8" fill="#545B64"/></marker>
+<marker id="arrow-accent" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto"><polygon points="0 0, 10 4, 0 8" fill="#EC7211"/></marker>
+<marker id="arrow-link" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto"><polygon points="0 0, 10 4, 0 8" fill="#0972D3"/></marker>
+<marker id="arrow-ink" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto"><polygon points="0 0, 10 4, 0 8" fill="#232F3E"/></marker>
+<marker id="arrow-teal" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto"><polygon points="0 0, 10 4, 0 8" fill="#01A88D"/></marker>
+<marker id="arrow-purple" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto"><polygon points="0 0, 10 4, 0 8" fill="#8C4FFF"/></marker>
+</defs>
+<rect width="100%" height="100%" fill="#FFFFFF"/>
+<rect x="40" y="72" width="272" height="552" rx="8" fill="#232F3E" fill-opacity="0.03" stroke="#232F3E" stroke-opacity="0.3" stroke-width="1.2"/>
+<text x="56" y="104" fill="#232F3E" font-size="20" font-weight="600" font-family="'Amazon Ember', 'Noto Sans CJK KR', 'Helvetica Neue', Helvetica, Arial, sans-serif" text-anchor="start">서울 리전</text>
+<text x="56" y="128" fill="#7D8998" font-size="16" font-weight="400" font-family="'Amazon Ember', 'Noto Sans CJK KR', 'Helvetica Neue', Helvetica, Arial, sans-serif" text-anchor="start">ap-northeast-2</text>
+<text x="64" y="436" fill="#545B64" font-size="16" font-weight="400" font-family="'Amazon Ember Mono', 'Noto Sans CJK KR', ui-monospace, monospace" text-anchor="start">InvokeAgentRuntime</text>
+<text x="64" y="460" fill="#7D8998" font-size="16" font-weight="400" font-family="'Amazon Ember', 'Noto Sans CJK KR', 'Helvetica Neue', Helvetica, Arial, sans-serif" text-anchor="start">새 runtimeSessionId = cold start</text>
+<text x="64" y="492" fill="#545B64" font-size="16" font-weight="400" font-family="'Amazon Ember Mono', 'Noto Sans CJK KR', ui-monospace, monospace" text-anchor="start">StopRuntimeSession</text>
+<text x="64" y="516" fill="#7D8998" font-size="16" font-weight="400" font-family="'Amazon Ember', 'Noto Sans CJK KR', 'Helvetica Neue', Helvetica, Arial, sans-serif" text-anchor="start">측정 직후 세션 정지</text>
+<text x="64" y="560" fill="#7D8998" font-size="16" font-weight="400" font-family="'Amazon Ember', 'Noto Sans CJK KR', 'Helvetica Neue', Helvetica, Arial, sans-serif" text-anchor="start">리전 간 왕복 중위값</text>
+<text x="64" y="588" fill="#232F3E" font-size="16" font-weight="400" font-family="'Amazon Ember Mono', 'Noto Sans CJK KR', ui-monospace, monospace" text-anchor="start">TCP 34.5 ms / TLS 69.9 ms</text>
+<rect x="424" y="72" width="816" height="552" rx="8" fill="#232F3E" fill-opacity="0.03" stroke="#232F3E" stroke-opacity="0.3" stroke-width="1.2"/>
+<text x="440" y="104" fill="#232F3E" font-size="20" font-weight="600" font-family="'Amazon Ember', 'Noto Sans CJK KR', 'Helvetica Neue', Helvetica, Arial, sans-serif" text-anchor="start">도쿄 리전</text>
+<text x="440" y="128" fill="#7D8998" font-size="16" font-weight="400" font-family="'Amazon Ember', 'Noto Sans CJK KR', 'Helvetica Neue', Helvetica, Arial, sans-serif" text-anchor="start">ap-northeast-1 (V2 제공 리전)</text>
+<rect x="448" y="136" width="768" height="96" rx="8" fill="#232F3E" fill-opacity="0.02" stroke="#232F3E" stroke-opacity="0.2" stroke-width="1.2"/>
+<text x="464" y="168" fill="#232F3E" font-size="20" font-weight="600" font-family="'Amazon Ember', 'Noto Sans CJK KR', 'Helvetica Neue', Helvetica, Arial, sans-serif" text-anchor="start">Amazon ECR: 이미지 3종 (linux/arm64)</text>
+<rect x="448" y="256" width="768" height="232" rx="8" fill="#232F3E" fill-opacity="0.02" stroke="#232F3E" stroke-opacity="0.2" stroke-width="1.2"/>
+<text x="464" y="288" fill="#232F3E" font-size="20" font-weight="600" font-family="'Amazon Ember', 'Noto Sans CJK KR', 'Helvetica Neue', Helvetica, Arial, sans-serif" text-anchor="start">AgentCore Runtime (microVM) 6개</text>
+<text x="464" y="352" fill="#232F3E" font-size="20" font-weight="600" font-family="'Amazon Ember', 'Noto Sans CJK KR', 'Helvetica Neue', Helvetica, Arial, sans-serif" text-anchor="start">V1</text>
+<text x="464" y="440" fill="#01A88D" font-size="20" font-weight="600" font-family="'Amazon Ember', 'Noto Sans CJK KR', 'Helvetica Neue', Helvetica, Arial, sans-serif" text-anchor="start">V2</text>
+<rect x="448" y="512" width="768" height="96" rx="8" fill="#232F3E" fill-opacity="0.02" stroke="#232F3E" stroke-opacity="0.2" stroke-width="1.2"/>
+<path d="M624 224 L624 256" fill="none" stroke="#545B64" stroke-width="1.2" marker-end="url(#arrow)"/>
+<path d="M864 224 L864 256" fill="none" stroke="#545B64" stroke-width="1.2" marker-end="url(#arrow)"/>
+<path d="M1104 224 L1104 256" fill="none" stroke="#545B64" stroke-width="1.2" marker-end="url(#arrow)"/>
+<path d="M288 344 L424 344" fill="none" stroke="#545B64" stroke-width="1.2" marker-end="url(#arrow)"/>
+<path d="M288 344 L384 344 Q392 344 392 352 L392 424 Q392 432 400 432 L424 432" fill="none" stroke="#545B64" stroke-width="1.2" marker-end="url(#arrow)"/>
+<path d="M832 488 L832 528" fill="none" stroke="#545B64" stroke-width="1.2" stroke-dasharray="6,4" marker-end="url(#arrow)"/>
+<rect x="64" y="296" width="224" height="96" rx="6" fill="#FFFFFF"/>
+<rect x="64" y="296" width="224" height="96" rx="6" fill="#545B64" fill-opacity="0.1" stroke="#7D8998" stroke-opacity="1" stroke-width="1"/>
+<text x="80" y="328" fill="#232F3E" font-size="20" font-weight="600" font-family="'Amazon Ember', 'Noto Sans CJK KR', 'Helvetica Neue', Helvetica, Arial, sans-serif" text-anchor="start">벤치마크 클라이언트</text>
+<text x="80" y="352" fill="#545B64" font-size="16" font-weight="400" font-family="'Amazon Ember Mono', 'Noto Sans CJK KR', ui-monospace, monospace" text-anchor="start">EC2 aarch64</text>
+<text x="80" y="376" fill="#545B64" font-size="16" font-weight="400" font-family="'Amazon Ember Mono', 'Noto Sans CJK KR', ui-monospace, monospace" text-anchor="start">boto3 1.43.98</text>
+<rect x="520" y="176" width="208" height="48" rx="6" fill="#FFFFFF"/>
+<rect x="520" y="176" width="208" height="48" rx="6" fill="#232F3E" fill-opacity="0.05" stroke="#545B64" stroke-opacity="1" stroke-width="1"/>
+<text x="536" y="208" fill="#232F3E" font-size="16" font-weight="600" font-family="'Amazon Ember', 'Noto Sans CJK KR', 'Helvetica Neue', Helvetica, Arial, sans-serif" text-anchor="start">200mb (45.4 MiB)</text>
+<rect x="760" y="176" width="208" height="48" rx="6" fill="#FFFFFF"/>
+<rect x="760" y="176" width="208" height="48" rx="6" fill="#232F3E" fill-opacity="0.05" stroke="#545B64" stroke-opacity="1" stroke-width="1"/>
+<text x="776" y="208" fill="#232F3E" font-size="16" font-weight="600" font-family="'Amazon Ember', 'Noto Sans CJK KR', 'Helvetica Neue', Helvetica, Arial, sans-serif" text-anchor="start">1gb (842.6 MiB)</text>
+<rect x="1000" y="176" width="208" height="48" rx="6" fill="#FFFFFF"/>
+<rect x="1000" y="176" width="208" height="48" rx="6" fill="#232F3E" fill-opacity="0.05" stroke="#545B64" stroke-opacity="1" stroke-width="1"/>
+<text x="1016" y="208" fill="#232F3E" font-size="16" font-weight="600" font-family="'Amazon Ember', 'Noto Sans CJK KR', 'Helvetica Neue', Helvetica, Arial, sans-serif" text-anchor="start">2gb (1,866.9 MiB)</text>
+<rect x="520" y="312" width="208" height="64" rx="6" fill="#FFFFFF"/>
+<rect x="520" y="312" width="208" height="64" rx="6" fill="#FFFFFF" fill-opacity="1" stroke="#232F3E" stroke-opacity="1" stroke-width="1"/>
+<text x="536" y="340" fill="#232F3E" font-size="20" font-weight="600" font-family="'Amazon Ember', 'Noto Sans CJK KR', 'Helvetica Neue', Helvetica, Arial, sans-serif" text-anchor="start">V1 / 200mb</text>
+<text x="536" y="364" fill="#545B64" font-size="16" font-weight="400" font-family="'Amazon Ember Mono', 'Noto Sans CJK KR', ui-monospace, monospace" text-anchor="start">cold 30, burst 50, warm 1</text>
+<rect x="520" y="400" width="208" height="64" rx="6" fill="#FFFFFF"/>
+<rect x="520" y="400" width="208" height="64" rx="6" fill="#FFFFFF" fill-opacity="1" stroke="#232F3E" stroke-opacity="1" stroke-width="1"/>
+<text x="536" y="428" fill="#232F3E" font-size="20" font-weight="600" font-family="'Amazon Ember', 'Noto Sans CJK KR', 'Helvetica Neue', Helvetica, Arial, sans-serif" text-anchor="start">V2 / 200mb</text>
+<text x="536" y="452" fill="#545B64" font-size="16" font-weight="400" font-family="'Amazon Ember Mono', 'Noto Sans CJK KR', ui-monospace, monospace" text-anchor="start">cold 30, burst 50, warm 1</text>
+<rect x="760" y="312" width="208" height="64" rx="6" fill="#FFFFFF"/>
+<rect x="760" y="312" width="208" height="64" rx="6" fill="#FFFFFF" fill-opacity="1" stroke="#232F3E" stroke-opacity="1" stroke-width="1"/>
+<text x="776" y="340" fill="#232F3E" font-size="20" font-weight="600" font-family="'Amazon Ember', 'Noto Sans CJK KR', 'Helvetica Neue', Helvetica, Arial, sans-serif" text-anchor="start">V1 / 1gb</text>
+<text x="776" y="364" fill="#545B64" font-size="16" font-weight="400" font-family="'Amazon Ember Mono', 'Noto Sans CJK KR', ui-monospace, monospace" text-anchor="start">cold 30, burst 50, warm 1</text>
+<rect x="760" y="400" width="208" height="64" rx="6" fill="#FFFFFF"/>
+<rect x="760" y="400" width="208" height="64" rx="6" fill="#FFFFFF" fill-opacity="1" stroke="#232F3E" stroke-opacity="1" stroke-width="1"/>
+<text x="776" y="428" fill="#232F3E" font-size="20" font-weight="600" font-family="'Amazon Ember', 'Noto Sans CJK KR', 'Helvetica Neue', Helvetica, Arial, sans-serif" text-anchor="start">V2 / 1gb</text>
+<text x="776" y="452" fill="#545B64" font-size="16" font-weight="400" font-family="'Amazon Ember Mono', 'Noto Sans CJK KR', ui-monospace, monospace" text-anchor="start">cold 30, burst 50, warm 1</text>
+<rect x="1000" y="312" width="208" height="64" rx="6" fill="#FFFFFF"/>
+<rect x="1000" y="312" width="208" height="64" rx="6" fill="#FFFFFF" fill-opacity="1" stroke="#232F3E" stroke-opacity="1" stroke-width="1"/>
+<text x="1016" y="340" fill="#232F3E" font-size="20" font-weight="600" font-family="'Amazon Ember', 'Noto Sans CJK KR', 'Helvetica Neue', Helvetica, Arial, sans-serif" text-anchor="start">V1 / 2gb</text>
+<text x="1016" y="364" fill="#545B64" font-size="16" font-weight="400" font-family="'Amazon Ember Mono', 'Noto Sans CJK KR', ui-monospace, monospace" text-anchor="start">cold 30, burst 50, warm 1</text>
+<rect x="1000" y="400" width="208" height="64" rx="6" fill="#FFFFFF"/>
+<rect x="1000" y="400" width="208" height="64" rx="6" fill="#FFFFFF" fill-opacity="1" stroke="#232F3E" stroke-opacity="1" stroke-width="1"/>
+<text x="1016" y="428" fill="#232F3E" font-size="20" font-weight="600" font-family="'Amazon Ember', 'Noto Sans CJK KR', 'Helvetica Neue', Helvetica, Arial, sans-serif" text-anchor="start">V2 / 2gb</text>
+<text x="1016" y="452" fill="#545B64" font-size="16" font-weight="400" font-family="'Amazon Ember Mono', 'Noto Sans CJK KR', ui-monospace, monospace" text-anchor="start">cold 30, burst 50, warm 1</text>
+<rect x="464" y="528" width="736" height="64" rx="6" fill="#FFFFFF"/>
+<rect x="464" y="528" width="736" height="64" rx="6" fill="#232F3E" fill-opacity="0.05" stroke="#545B64" stroke-opacity="1" stroke-width="1"/>
+<text x="480" y="556" fill="#232F3E" font-size="20" font-weight="600" font-family="'Amazon Ember', 'Noto Sans CJK KR', 'Helvetica Neue', Helvetica, Arial, sans-serif" text-anchor="start">Amazon CloudWatch</text>
+<text x="480" y="580" fill="#545B64" font-size="16" font-weight="400" font-family="'Amazon Ember Mono', 'Noto Sans CJK KR', ui-monospace, monospace" text-anchor="start">AWS/Bedrock-AgentCore: MemoryUsed-GBHours, CPUUsed-vCPUHours (Resource = 런타임 ARN)</text>
+<text x="40" y="44" fill="#232F3E" font-size="20" font-weight="600" font-family="'Amazon Ember', 'Noto Sans CJK KR', 'Helvetica Neue', Helvetica, Arial, sans-serif" text-anchor="start">측정 구성: 서울 리전 클라이언트, 도쿄 리전 AgentCore Runtime 6개</text>
+<line x1="40" y1="648" x2="1240" y2="648" stroke="rgba(35,47,62,0.12)" stroke-width="0.8"/>
+<text x="40" y="676" fill="#545B64" font-size="16" font-weight="600" font-family="'Amazon Ember', 'Noto Sans CJK KR', 'Helvetica Neue', Helvetica, Arial, sans-serif" text-anchor="start">범례</text>
+<line x1="120" y1="666" x2="160" y2="666" stroke="#545B64" stroke-width="2"/>
+<text x="172" y="672" fill="#545B64" font-size="16" font-weight="400" font-family="'Amazon Ember', 'Noto Sans CJK KR', 'Helvetica Neue', Helvetica, Arial, sans-serif" text-anchor="start">InvokeAgentRuntime (리전 간 공용 인터넷)</text>
+<line x1="552" y1="666" x2="592" y2="666" stroke="#545B64" stroke-width="2" stroke-dasharray="6,4"/>
+<text x="604" y="672" fill="#545B64" font-size="16" font-weight="400" font-family="'Amazon Ember', 'Noto Sans CJK KR', 'Helvetica Neue', Helvetica, Arial, sans-serif" text-anchor="start">과금 사용량 지표 (최대 60분 지연)</text>
+<rect x="900" y="654" width="40" height="24" rx="4" fill="#FFFFFF" stroke="#232F3E"/>
+<text x="952" y="672" fill="#545B64" font-size="16" font-weight="400" font-family="'Amazon Ember', 'Noto Sans CJK KR', 'Helvetica Neue', Helvetica, Arial, sans-serif" text-anchor="start">런타임 = 이미지 × platformVersion</text>
+</svg></body></html>

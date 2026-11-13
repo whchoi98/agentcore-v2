@@ -1,0 +1,271 @@
+{
+  "started_utc": "2026-09-19T12:25:21.252784+00:00",
+  "alloc_mb": 1536,
+  "idle_s": 90.0,
+  "reps": 4,
+  "legs": {
+    "acbench_mem_V1:alloc": [
+      {
+        "seq": 0,
+        "alloc": true,
+        "session_id": "94838ab1fcd14ef39484e965074b5580cc3c5d0b4ad644919e43c50e449840e7",
+        "invoke_ms": 3986.2,
+        "ok": true,
+        "memory_profile": {
+          "alloc_mb_requested": 1536,
+          "rss_before_mb": 50.8,
+          "rss_peak_mb": 1593.8,
+          "rss_after_free_mb": 52.9,
+          "hold_s": 2.0
+        },
+        "rss_mb": 50.9,
+        "boot_id": "d7ca4183ab2f4903",
+        "session_wall_s": 94.2
+      },
+      {
+        "seq": 1,
+        "alloc": true,
+        "session_id": "25d84ae5223c4f27b2fba6a22aa4f81ce8ae562edfa64bcd980c407642618dc0",
+        "invoke_ms": 3597.9,
+        "ok": true,
+        "memory_profile": {
+          "alloc_mb_requested": 1536,
+          "rss_before_mb": 50.4,
+          "rss_peak_mb": 1593.4,
+          "rss_after_free_mb": 52.5,
+          "hold_s": 2.0
+        },
+        "rss_mb": 50.5,
+        "boot_id": "ae7939f971b7457b",
+        "session_wall_s": 93.8
+      },
+      {
+        "seq": 2,
+        "alloc": true,
+        "session_id": "7faa3f4bb9bd49068e5390b70f873fccc7dbba7fc93848ad8923e3b9bd63a894",
+        "invoke_ms": 3475.9,
+        "ok": true,
+        "memory_profile": {
+          "alloc_mb_requested": 1536,
+          "rss_before_mb": 50.4,
+          "rss_peak_mb": 1593.4,
+          "rss_after_free_mb": 52.5,
+          "hold_s": 2.0
+        },
+        "rss_mb": 50.5,
+        "boot_id": "da570895a142fd35",
+        "session_wall_s": 93.7
+      },
+      {
+        "seq": 3,
+        "alloc": true,
+        "session_id": "2404ef7974cc4fc0a178843a20a01b73d28d23be470640aca4eaa81a9f3266e3",
+        "invoke_ms": 3674.1,
+        "ok": true,
+        "memory_profile": {
+          "alloc_mb_requested": 1536,
+          "rss_before_mb": 51.5,
+          "rss_peak_mb": 1594.5,
+          "rss_after_free_mb": 53.6,
+          "hold_s": 2.0
+        },
+        "rss_mb": 51.6,
+        "boot_id": "913b2ed1b97fdedb",
+        "session_wall_s": 93.9
+      }
+    ],
+    "acbench_mem_V1:control": [
+      {
+        "seq": 0,
+        "alloc": false,
+        "session_id": "d1de207a50a344d7b601ea9ae8ed761e2bb618bde84f4173abbb61ef7b0a802e",
+        "invoke_ms": 585.8,
+        "ok": true,
+        "memory_profile": null,
+        "rss_mb": 46.3,
+        "boot_id": "ce58e61ee841c9dd",
+        "session_wall_s": 90.8
+      },
+      {
+        "seq": 1,
+        "alloc": false,
+        "session_id": "f8ef2ad3545c4dc584050650294139c9df0ff869d3004671974812b41016839a",
+        "invoke_ms": 568.5,
+        "ok": true,
+        "memory_profile": null,
+        "rss_mb": 46.3,
+        "boot_id": "8656a86b1c02b03b",
+        "session_wall_s": 90.8
+      },
+      {
+        "seq": 2,
+        "alloc": false,
+        "session_id": "5322030714b44e84924be20f23c22142d968928fd2874973ba4de7b05180156a",
+        "invoke_ms": 468.5,
+        "ok": true,
+        "memory_profile": null,
+        "rss_mb": 46.3,
+        "boot_id": "83f14e55f5d3dda1",
+        "session_wall_s": 90.6
+      },
+      {
+        "seq": 3,
+        "alloc": false,
+        "session_id": "ae04c71663794293880fbfaa9e922dc1d50efd3d31194830b6799f35801d213c",
+        "invoke_ms": 456.1,
+        "ok": true,
+        "memory_profile": null,
+        "rss_mb": 46.3,
+        "boot_id": "1e36a6e5bd68529a",
+        "session_wall_s": 90.7
+      }
+    ],
+    "acbench_mem_V2:alloc": [
+      {
+        "seq": 0,
+        "alloc": true,
+        "session_id": "502b26879dfc4448a652a27767d1d632d4f694c04e1e44e4918fcfbf48f3fc63",
+        "invoke_ms": 4454.4,
+        "ok": true,
+        "memory_profile": {
+          "alloc_mb_requested": 1536,
+          "rss_before_mb": 50.7,
+          "rss_peak_mb": 1593.7,
+          "rss_after_free_mb": 52.9,
+          "hold_s": 2.0
+        },
+        "rss_mb": 50.9,
+        "boot_id": "e0c2eca3649f2976",
+        "session_wall_s": 94.7
+      },
+      {
+        "seq": 1,
+        "alloc": true,
+        "session_id": "b9390a52b1d240a8b7d9a749630b733242a7c4ae37f34884a4cd0f3f876227c5",
+        "invoke_ms": 4859.2,
+        "ok": true,
+        "memory_profile": {
+          "alloc_mb_requested": 1536,
+          "rss_before_mb": 50.7,
+          "rss_peak_mb": 1593.7,
+          "rss_after_free_mb": 52.9,
+          "hold_s": 2.0
+        },
+        "rss_mb": 50.9,
+        "boot_id": "e0c2eca3649f2976",
+        "session_wall_s": 95.2
+      },
+      {
+        "seq": 2,
+        "alloc": true,
+        "session_id": "2fc0b6bb333a4616a24cab939fd7b96491bbb1eddbcf413d9f807885ac1a6509",
+        "invoke_ms": 4418.7,
+        "ok": true,
+        "memory_profile": {
+          "alloc_mb_requested": 1536,
+          "rss_before_mb": 50.7,
+          "rss_peak_mb": 1593.7,
+          "rss_after_free_mb": 52.9,
+          "hold_s": 2.0
+        },
+        "rss_mb": 50.9,
+        "boot_id": "e0c2eca3649f2976",
+        "session_wall_s": 94.7
+      },
+      {
+        "seq": 3,
+        "alloc": true,
+        "session_id": "ccf10cacf6b64725b743c376c98c239b6580d776f1ad476d88d4cc9c0c04555b",
+        "invoke_ms": 4655.4,
+        "ok": true,
+        "memory_profile": {
+          "alloc_mb_requested": 1536,
+          "rss_before_mb": 50.7,
+          "rss_peak_mb": 1593.7,
+          "rss_after_free_mb": 52.9,
+          "hold_s": 2.0
+        },
+        "rss_mb": 50.9,
+        "boot_id": "e0c2eca3649f2976",
+        "session_wall_s": 94.9
+      }
+    ],
+    "acbench_mem_V2:control": [
+      {
+        "seq": 0,
+        "alloc": false,
+        "session_id": "76e10766162f406081949e539d61acf20ec63a049509421586bc1ac64a12eafa",
+        "invoke_ms": 1558.9,
+        "ok": true,
+        "memory_profile": null,
+        "rss_mb": 46.3,
+        "boot_id": "e0c2eca3649f2976",
+        "session_wall_s": 91.9
+      },
+      {
+        "seq": 1,
+        "alloc": false,
+        "session_id": "2ed455fe4260409ebc43fb1adb82f71204e316547d7f4e368f93b481943f2b17",
+        "invoke_ms": 1823.8,
+        "ok": true,
+        "memory_profile": null,
+        "rss_mb": 46.3,
+        "boot_id": "e0c2eca3649f2976",
+        "session_wall_s": 92.2
+      },
+      {
+        "seq": 2,
+        "alloc": false,
+        "session_id": "468393d95f764746a06e82cbf62e439fee5e3f79b9d645aabe44636446f17cc0",
+        "invoke_ms": 2134.5,
+        "ok": true,
+        "memory_profile": null,
+        "rss_mb": 46.3,
+        "boot_id": "e0c2eca3649f2976",
+        "session_wall_s": 92.5
+      },
+      {
+        "seq": 3,
+        "alloc": false,
+        "session_id": "59af6677ec264182b5144ddbac33b2c2955154ab67084ed8b6c4c880fad7f48c",
+        "invoke_ms": 2399.0,
+        "ok": true,
+        "memory_profile": null,
+        "rss_mb": 46.3,
+        "boot_id": "e0c2eca3649f2976",
+        "session_wall_s": 92.7
+      }
+    ]
+  },
+  "leg_windows": {
+    "acbench_mem_V1:alloc": {
+      "runtime": "acbench_mem_V1",
+      "alloc": true,
+      "start_utc": "2026-09-19T12:25:21.252808+00:00",
+      "end_utc": "2026-09-19T12:26:55.437963+00:00",
+      "session_hours": 0.10433
+    },
+    "acbench_mem_V1:control": {
+      "runtime": "acbench_mem_V1",
+      "alloc": false,
+      "start_utc": "2026-09-19T12:29:25.438448+00:00",
+      "end_utc": "2026-09-19T12:30:56.243059+00:00",
+      "session_hours": 0.10081
+    },
+    "acbench_mem_V2:alloc": {
+      "runtime": "acbench_mem_V2",
+      "alloc": true,
+      "start_utc": "2026-09-19T12:33:26.243555+00:00",
+      "end_utc": "2026-09-19T12:35:01.412673+00:00",
+      "session_hours": 0.10542
+    },
+    "acbench_mem_V2:control": {
+      "runtime": "acbench_mem_V2",
+      "alloc": false,
+      "start_utc": "2026-09-19T12:37:31.413250+00:00",
+      "end_utc": "2026-09-19T12:39:04.128107+00:00",
+      "session_hours": 0.10258
+    }
+  },
+  "finished_utc": "2026-09-19T12:39:04.128603+00:00"
+}

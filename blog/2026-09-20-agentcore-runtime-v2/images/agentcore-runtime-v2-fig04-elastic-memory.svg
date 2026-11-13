@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720" role="img" aria-labelledby="agentcore-runtime-v2-fig04-title agentcore-runtime-v2-fig04-desc">
+<title id="agentcore-runtime-v2-fig04-title">1.5 GB 할당 후 해제한 세션의 과금 footprint</title>
+<desc id="agentcore-runtime-v2-fig04-desc">V1은 대조군 1.69 GB에서 3.64 GB로 1.95 GB가 남고 V2는 1.11 GB에서 1.27 GB로 0.16 GB만 남아 해제한 메모리의 약 92%가 회수된다</desc>
+<defs>
+<marker id="arrow" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto"><polygon points="0 0, 10 4, 0 8" fill="#545B64"/></marker>
+<marker id="arrow-accent" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto"><polygon points="0 0, 10 4, 0 8" fill="#EC7211"/></marker>
+<marker id="arrow-link" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto"><polygon points="0 0, 10 4, 0 8" fill="#0972D3"/></marker>
+<marker id="arrow-ink" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto"><polygon points="0 0, 10 4, 0 8" fill="#232F3E"/></marker>
+<marker id="arrow-teal" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto"><polygon points="0 0, 10 4, 0 8" fill="#01A88D"/></marker>
+<marker id="arrow-purple" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto"><polygon points="0 0, 10 4, 0 8" fill="#8C4FFF"/></marker>
+</defs>
+<rect width="100%" height="100%" fill="#FFFFFF"/>
+<line x1="120" y1="584" x2="1200" y2="584" stroke="#D5DBDB" stroke-width="1.2"/>
+<text x="104" y="588" fill="#545B64" font-size="16" font-weight="400" font-family="'Amazon Ember Mono', 'Noto Sans CJK KR', ui-monospace, monospace" text-anchor="end">0</text>
+<line x1="120" y1="464" x2="1200" y2="464" stroke="rgba(35,47,62,0.12)" stroke-width="0.8"/>
+<text x="104" y="468" fill="#545B64" font-size="16" font-weight="400" font-family="'Amazon Ember Mono', 'Noto Sans CJK KR', ui-monospace, monospace" text-anchor="end">1</text>
+<line x1="120" y1="344" x2="1200" y2="344" stroke="rgba(35,47,62,0.12)" stroke-width="0.8"/>
+<text x="104" y="348" fill="#545B64" font-size="16" font-weight="400" font-family="'Amazon Ember Mono', 'Noto Sans CJK KR', ui-monospace, monospace" text-anchor="end">2</text>
+<line x1="120" y1="224" x2="1200" y2="224" stroke="rgba(35,47,62,0.12)" stroke-width="0.8"/>
+<text x="104" y="228" fill="#545B64" font-size="16" font-weight="400" font-family="'Amazon Ember Mono', 'Noto Sans CJK KR', ui-monospace, monospace" text-anchor="end">3</text>
+<line x1="120" y1="104" x2="1200" y2="104" stroke="rgba(35,47,62,0.12)" stroke-width="0.8"/>
+<text x="104" y="108" fill="#545B64" font-size="16" font-weight="400" font-family="'Amazon Ember Mono', 'Noto Sans CJK KR', ui-monospace, monospace" text-anchor="end">4</text>
+<text x="104" y="84" fill="#7D8998" font-size="16" font-weight="400" font-family="'Amazon Ember', 'Noto Sans CJK KR', 'Helvetica Neue', Helvetica, Arial, sans-serif" text-anchor="end">GB</text>
+<text x="1200" y="96" fill="#7D8998" font-size="16" font-weight="400" font-family="'Amazon Ember Mono', 'Noto Sans CJK KR', ui-monospace, monospace" text-anchor="end">RSS 실측: 50.8 MB, 최고 1,593.8 MB, 해제 후 52.9 MB</text>
+<rect x="216" y="380" width="160" height="204" rx="2" fill="#232F3E" fill-opacity="0.05" stroke="#232F3E" stroke-width="1.2" stroke-dasharray="4,3"/>
+<rect x="424" y="148" width="160" height="436" rx="2" fill="#232F3E" fill-opacity="0.18" stroke="#232F3E" stroke-width="1.2"/>
+<text x="296" y="368" fill="#545B64" font-size="16" font-weight="400" font-family="'Amazon Ember Mono', 'Noto Sans CJK KR', ui-monospace, monospace" text-anchor="middle">1.69 GB</text>
+<text x="504" y="136" fill="#232F3E" font-size="16" font-weight="400" font-family="'Amazon Ember Mono', 'Noto Sans CJK KR', ui-monospace, monospace" text-anchor="middle">3.64 GB</text>
+<text x="504" y="112" fill="#EC7211" font-size="16" font-weight="400" font-family="'Amazon Ember Mono', 'Noto Sans CJK KR', ui-monospace, monospace" text-anchor="middle">+1.95 GB 잔존</text>
+<text x="400" y="616" fill="#232F3E" font-size="20" font-weight="600" font-family="'Amazon Ember', 'Noto Sans CJK KR', 'Helvetica Neue', Helvetica, Arial, sans-serif" text-anchor="middle">V1</text>
+<text x="400" y="640" fill="#545B64" font-size="16" font-weight="400" font-family="'Amazon Ember Mono', 'Noto Sans CJK KR', ui-monospace, monospace" text-anchor="middle">GB-hours 2.23배</text>
+<rect x="696" y="452" width="160" height="132" rx="2" fill="#232F3E" fill-opacity="0.05" stroke="#232F3E" stroke-width="1.2" stroke-dasharray="4,3"/>
+<rect x="904" y="432" width="160" height="152" rx="2" fill="#01A88D" fill-opacity="0.18" stroke="#01A88D" stroke-width="1.2"/>
+<text x="776" y="440" fill="#545B64" font-size="16" font-weight="400" font-family="'Amazon Ember Mono', 'Noto Sans CJK KR', ui-monospace, monospace" text-anchor="middle">1.11 GB</text>
+<text x="984" y="420" fill="#01A88D" font-size="16" font-weight="400" font-family="'Amazon Ember Mono', 'Noto Sans CJK KR', ui-monospace, monospace" text-anchor="middle">1.27 GB</text>
+<text x="984" y="396" fill="#EC7211" font-size="16" font-weight="400" font-family="'Amazon Ember Mono', 'Noto Sans CJK KR', ui-monospace, monospace" text-anchor="middle">+0.16 GB 잔존</text>
+<text x="880" y="616" fill="#01A88D" font-size="20" font-weight="600" font-family="'Amazon Ember', 'Noto Sans CJK KR', 'Helvetica Neue', Helvetica, Arial, sans-serif" text-anchor="middle">V2</text>
+<text x="880" y="640" fill="#545B64" font-size="16" font-weight="400" font-family="'Amazon Ember Mono', 'Noto Sans CJK KR', ui-monospace, monospace" text-anchor="middle">GB-hours 1.17배, 약 92% 회수</text>
+<text x="40" y="44" fill="#232F3E" font-size="20" font-weight="600" font-family="'Amazon Ember', 'Noto Sans CJK KR', 'Helvetica Neue', Helvetica, Arial, sans-serif" text-anchor="start">1.5 GB 할당 후 해제한 세션의 과금 footprint (레그당 4세션, 세션-시간 약 0.10 h)</text>
+<line x1="40" y1="648" x2="1240" y2="648" stroke="rgba(35,47,62,0.12)" stroke-width="0.8"/>
+<text x="40" y="676" fill="#545B64" font-size="16" font-weight="600" font-family="'Amazon Ember', 'Noto Sans CJK KR', 'Helvetica Neue', Helvetica, Arial, sans-serif" text-anchor="start">범례</text>
+<rect x="120" y="654" width="40" height="24" rx="4" fill="#232F3E" fill-opacity="0.05" stroke="#545B64" stroke-dasharray="4,3"/>
+<text x="172" y="672" fill="#545B64" font-size="16" font-weight="400" font-family="'Amazon Ember', 'Noto Sans CJK KR', 'Helvetica Neue', Helvetica, Arial, sans-serif" text-anchor="start">대조군 (할당 없음, 같은 세션 모양)</text>
+<rect x="472" y="654" width="40" height="24" rx="4" fill="#232F3E" fill-opacity="0.15" stroke="#232F3E"/>
+<text x="524" y="672" fill="#545B64" font-size="16" font-weight="400" font-family="'Amazon Ember', 'Noto Sans CJK KR', 'Helvetica Neue', Helvetica, Arial, sans-serif" text-anchor="start">V1 스파이크 후</text>
+<rect x="676" y="654" width="40" height="24" rx="4" fill="#01A88D" fill-opacity="0.18" stroke="#01A88D"/>
+<text x="728" y="672" fill="#545B64" font-size="16" font-weight="400" font-family="'Amazon Ember', 'Noto Sans CJK KR', 'Helvetica Neue', Helvetica, Arial, sans-serif" text-anchor="start">V2 스파이크 후</text>
+</svg>

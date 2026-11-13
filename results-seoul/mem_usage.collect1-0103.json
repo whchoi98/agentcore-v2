@@ -1,0 +1,62 @@
+{
+  "alloc_mb": 1536,
+  "idle_s": 90.0,
+  "rows": [
+    {
+      "leg": "acbench_mem_V1:alloc",
+      "runtime": "acbench_mem_V1",
+      "version": "V1",
+      "condition": "alloc",
+      "sessions": 4,
+      "session_hours": 0.10356,
+      "gb_hours": 0.2976,
+      "implied_footprint_gb": 2.87,
+      "median_invoke_ms": 3127.2,
+      "cost_memory_usd": 0.00281
+    },
+    {
+      "leg": "acbench_mem_V1:control",
+      "runtime": "acbench_mem_V1",
+      "version": "V1",
+      "condition": "control",
+      "sessions": 4,
+      "session_hours": 0.10056,
+      "gb_hours": 0.1275,
+      "implied_footprint_gb": 1.27,
+      "median_invoke_ms": 390.5,
+      "cost_memory_usd": 0.0012
+    },
+    {
+      "leg": "acbench_mem_V2:alloc",
+      "runtime": "acbench_mem_V2",
+      "version": "V2",
+      "condition": "alloc",
+      "sessions": 4,
+      "session_hours": 0.1055,
+      "gb_hours": 0,
+      "implied_footprint_gb": 0.0,
+      "median_invoke_ms": 4755.7,
+      "cost_memory_usd": 0.0
+    },
+    {
+      "leg": "acbench_mem_V2:control",
+      "runtime": "acbench_mem_V2",
+      "version": "V2",
+      "condition": "control",
+      "sessions": 4,
+      "session_hours": 0.102,
+      "gb_hours": 0,
+      "implied_footprint_gb": 0.0,
+      "median_invoke_ms": 1677.2,
+      "cost_memory_usd": 0.0
+    }
+  ],
+  "deltas": {
+    "V1": {
+      "alloc_footprint_gb": 2.87,
+      "control_footprint_gb": 1.27,
+      "spike_attributable_gb": 1.6,
+      "alloc_vs_control_gbh_ratio": 2.33
+    }
+  }
+}

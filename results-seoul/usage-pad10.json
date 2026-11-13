@@ -1,0 +1,103 @@
+{
+  "region": "ap-northeast-2",
+  "window_start_utc": "2026-11-13T00:25:03.396895+00:00",
+  "pre_pad_min": 10.0,
+  "window_end_utc": "2026-11-13T01:03:58.573634+00:00",
+  "rates_usd": {
+    "V1": {
+      "vcpu_hour": 0.0895,
+      "gb_hour": 0.00945
+    },
+    "V2": {
+      "vcpu_hour": 0.1276,
+      "gb_hour": 0.0169
+    }
+  },
+  "rows": [
+    {
+      "runtime": "acbench_200mb_V1",
+      "size": "200mb",
+      "version": "V1",
+      "sessions": 81,
+      "observed_session_hours": 0.08534,
+      "gb_hours": 0.1422,
+      "vcpu_hours": 0.1172,
+      "gb_hours_per_session": 0.00176,
+      "implied_footprint_gb": 1.67,
+      "cost_memory_usd": 0.0013,
+      "cost_cpu_usd": 0.0105,
+      "cost_total_usd": 0.0118
+    },
+    {
+      "runtime": "acbench_200mb_V2",
+      "size": "200mb",
+      "version": "V2",
+      "sessions": 81,
+      "observed_session_hours": 0.03801,
+      "gb_hours": 0.0718,
+      "vcpu_hours": 0.0554,
+      "gb_hours_per_session": 0.00089,
+      "implied_footprint_gb": 1.89,
+      "cost_memory_usd": 0.0012,
+      "cost_cpu_usd": 0.0071,
+      "cost_total_usd": 0.0083
+    },
+    {
+      "runtime": "acbench_1gb_V1",
+      "size": "1gb",
+      "version": "V1",
+      "sessions": 81,
+      "observed_session_hours": 0.19674,
+      "gb_hours": 1.2056,
+      "vcpu_hours": 0.4819,
+      "gb_hours_per_session": 0.01488,
+      "implied_footprint_gb": 6.13,
+      "cost_memory_usd": 0.0114,
+      "cost_cpu_usd": 0.0431,
+      "cost_total_usd": 0.0545
+    },
+    {
+      "runtime": "acbench_1gb_V2",
+      "size": "1gb",
+      "version": "V2",
+      "sessions": 81,
+      "observed_session_hours": 0.03834,
+      "gb_hours": 0.1008,
+      "vcpu_hours": 0.0581,
+      "gb_hours_per_session": 0.00124,
+      "implied_footprint_gb": 2.63,
+      "cost_memory_usd": 0.0017,
+      "cost_cpu_usd": 0.0074,
+      "cost_total_usd": 0.0091
+    },
+    {
+      "runtime": "acbench_2gb_V1",
+      "size": "2gb",
+      "version": "V1",
+      "sessions": 81,
+      "observed_session_hours": 0.46527,
+      "gb_hours": 3.1587,
+      "vcpu_hours": 0.8432,
+      "gb_hours_per_session": 0.039,
+      "implied_footprint_gb": 6.79,
+      "cost_memory_usd": 0.0299,
+      "cost_cpu_usd": 0.0755,
+      "cost_total_usd": 0.1053
+    },
+    {
+      "runtime": "acbench_2gb_V2",
+      "size": "2gb",
+      "version": "V2",
+      "sessions": 81,
+      "observed_session_hours": 0.03922,
+      "gb_hours": 0.1088,
+      "vcpu_hours": 0.0609,
+      "gb_hours_per_session": 0.00134,
+      "implied_footprint_gb": 2.77,
+      "cost_memory_usd": 0.0018,
+      "cost_cpu_usd": 0.0078,
+      "cost_total_usd": 0.0096
+    }
+  ],
+  "experiment_total_usd": 0.1986
+}

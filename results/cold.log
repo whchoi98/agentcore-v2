@@ -1,0 +1,14 @@
+[rtt] {'host': 'bedrock-agentcore.ap-northeast-1.amazonaws.com', 'samples': 10, 'tcp_connect_ms_median': 34.52, 'tcp_tls_ms_median': 69.25}
+[cold] acbench_200mb_V1: 30 fresh sessions, concurrency 5
+[cold]   p50=761.5 p75=5466.8 p99=5536.8 ms | ok=30/30 | boot_ids=30 | wall=19.6s
+[cold] acbench_200mb_V2: 30 fresh sessions, concurrency 5
+[cold]   p50=1909.9 p75=1972.4 p99=2770.7 ms | ok=30/30 | boot_ids=2 | wall=14.4s
+[cold] acbench_1gb_V1: 30 fresh sessions, concurrency 5
+[cold]   p50=677.3 p75=13477.8 p99=15687.0 ms | ok=30/30 | boot_ids=30 | wall=31.9s
+[cold] acbench_1gb_V2: 30 fresh sessions, concurrency 5
+[cold]   p50=1939.7 p75=2100.8 p99=2420.3 ms | ok=30/30 | boot_ids=1 | wall=14.7s
+[cold] acbench_2gb_V1: 30 fresh sessions, concurrency 5
+[cold]   p50=27622.4 p75=27705.0 p99=29723.8 ms | ok=30/30 | boot_ids=30 | wall=115.3s
+[cold] acbench_2gb_V2: 30 fresh sessions, concurrency 5
+[cold]   p50=1935.4 p75=1984.3 p99=2568.2 ms | ok=30/30 | boot_ids=1 | wall=14.1s
+[bench] wrote /home/ec2-user/my-project/agentcore-v2/results/bench-cold.json

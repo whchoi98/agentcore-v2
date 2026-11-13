@@ -1,0 +1,68 @@
+{
+  "acbench_200mb_V1": {
+    "size": "200mb",
+    "requested_version": "V1",
+    "platform_version": "V1",
+    "runtime_id": "acbench_200mb_V1-aguV4nEuXw",
+    "arn": "arn:aws:bedrock-agentcore:ap-northeast-1:061525506XXX:runtime/acbench_200mb_V1-aguV4nEuXw",
+    "image_uri": "061525506XXX.dkr.ecr.ap-northeast-1.amazonaws.com/agentcore-v2-bench-agent:200mb",
+    "status": "READY",
+    "api_call_s": 0.927,
+    "ready_s": 3.3
+  },
+  "acbench_200mb_V2": {
+    "size": "200mb",
+    "requested_version": "V2",
+    "platform_version": "V2",
+    "runtime_id": "acbench_200mb_V2-szQ4k5Hr4e",
+    "arn": "arn:aws:bedrock-agentcore:ap-northeast-1:061525506XXX:runtime/acbench_200mb_V2-szQ4k5Hr4e",
+    "image_uri": "061525506XXX.dkr.ecr.ap-northeast-1.amazonaws.com/agentcore-v2-bench-agent:200mb",
+    "status": "READY",
+    "api_call_s": 0.727,
+    "ready_s": 185.68
+  },
+  "acbench_1gb_V1": {
+    "size": "1gb",
+    "requested_version": "V1",
+    "platform_version": "V1",
+    "runtime_id": "acbench_1gb_V1-Fp2B1VGBM6",
+    "arn": "arn:aws:bedrock-agentcore:ap-northeast-1:061525506XXX:runtime/acbench_1gb_V1-Fp2B1VGBM6",
+    "image_uri": "061525506XXX.dkr.ecr.ap-northeast-1.amazonaws.com/agentcore-v2-bench-agent:1gb",
+    "status": "READY",
+    "api_call_s": 0.851,
+    "ready_s": 3.27
+  },
+  "acbench_1gb_V2": {
+    "size": "1gb",
+    "requested_version": "V2",
+    "platform_version": "V2",
+    "runtime_id": "acbench_1gb_V2-G3VL107pC0",
+    "arn": "arn:aws:bedrock-agentcore:ap-northeast-1:061525506XXX:runtime/acbench_1gb_V2-G3VL107pC0",
+    "image_uri": "061525506XXX.dkr.ecr.ap-northeast-1.amazonaws.com/agentcore-v2-bench-agent:1gb",
+    "status": "READY",
+    "api_call_s": 0.695,
+    "ready_s": 200.92
+  },
+  "acbench_2gb_V1": {
+    "size": "2gb",
+    "requested_version": "V1",
+    "platform_version": "V1",
+    "runtime_id": "acbench_2gb_V1-mOJRKi4FC7",
+    "arn": "arn:aws:bedrock-agentcore:ap-northeast-1:061525506XXX:runtime/acbench_2gb_V1-mOJRKi4FC7",
+    "image_uri": "061525506XXX.dkr.ecr.ap-northeast-1.amazonaws.com/agentcore-v2-bench-agent:2gb",
+    "status": "READY",
+    "api_call_s": 0.746,
+    "ready_s": 3.34
+  },
+  "acbench_2gb_V2": {
+    "size": "2gb",
+    "requested_version": "V2",
+    "platform_version": "V2",
+    "runtime_id": "acbench_2gb_V2-tErRr3CHrb",
+    "arn": "arn:aws:bedrock-agentcore:ap-northeast-1:061525506XXX:runtime/acbench_2gb_V2-tErRr3CHrb",
+    "image_uri": "061525506XXX.dkr.ecr.ap-northeast-1.amazonaws.com/agentcore-v2-bench-agent:2gb",
+    "status": "READY",
+    "api_call_s": 0.74,
+    "ready_s": 216.59
+  }
+}

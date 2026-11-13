@@ -1,0 +1,5 @@
+[deploy] role AgentCoreV2BenchExecutionRole exists, trust policy refreshed
+[probe] create default (platformVersion omitted): READY in 3.3s -> platformVersion=V1 version=1
+[probe]   evidence: {'sessions': 3, 'ok': 3, 'errors': [], 'latency_ms': [5441.04, 5481.02, 5552.58], 'distinct_boot_ids': 3, 'uptime_mono_s': [0.712, 1.07, 1.214], 'uptime_wall_s': [0.712, 1.07, 1.214]}
+[probe] deleted default runtime acprobe_default_apnortheast1-K7I8eIAKO9
+[probe] wrote /home/ec2-user/my-project/agentcore-v2/results-seoul/default_probe-ap-northeast-1.json

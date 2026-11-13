@@ -1,0 +1,227 @@
+{
+  "region": "ap-northeast-2",
+  "started_utc": "2026-11-13T00:18:40.752746+00:00",
+  "botocore": "1.44.2",
+  "image_uri": "061525506XXX.dkr.ecr.ap-northeast-2.amazonaws.com/agentcore-v2-bench-agent:200mb",
+  "steps": [
+    {
+      "step": "create default (platformVersion omitted)",
+      "runtime_id": "acprobe_default_apnortheast2-FxfBnuE1rD",
+      "api_call_s": 0.76,
+      "ready_s": 3.2,
+      "terminal_status": "READY",
+      "response_keys": [
+        "agentRuntimeArn",
+        "agentRuntimeId",
+        "agentRuntimeVersion",
+        "createdAt",
+        "status",
+        "workloadIdentityDetails"
+      ],
+      "response_platformVersion": null,
+      "after": {
+        "status": "READY",
+        "platformVersion": "V1",
+        "agentRuntimeVersion": "1",
+        "failureReason": null
+      }
+    },
+    {
+      "step": "create explicit V1",
+      "runtime_id": "acprobe_v1_apnortheast2-6eXysr2FQ4",
+      "api_call_s": 0.51,
+      "ready_s": 3.2,
+      "terminal_status": "READY",
+      "response_keys": [
+        "agentRuntimeArn",
+        "agentRuntimeId",
+        "agentRuntimeVersion",
+        "createdAt",
+        "status",
+        "workloadIdentityDetails"
+      ],
+      "response_platformVersion": null,
+      "after": {
+        "status": "READY",
+        "platformVersion": "V1",
+        "agentRuntimeVersion": "1",
+        "failureReason": null
+      }
+    },
+    {
+      "step": "update V1 runtime, platformVersion omitted",
+      "runtime_id": "acprobe_v1_apnortheast2-6eXysr2FQ4",
+      "api_call_s": 0.48,
+      "ready_s": 3.2,
+      "terminal_status": "READY",
+      "response_keys": [
+        "agentRuntimeArn",
+        "agentRuntimeId",
+        "agentRuntimeVersion",
+        "createdAt",
+        "lastUpdatedAt",
+        "status",
+        "workloadIdentityDetails"
+      ],
+      "response_platformVersion": null,
+      "after": {
+        "status": "READY",
+        "platformVersion": "V1",
+        "agentRuntimeVersion": "2",
+        "failureReason": null
+      }
+    },
+    {
+      "step": "update V1 runtime to platformVersion=V2",
+      "runtime_id": "acprobe_v1_apnortheast2-6eXysr2FQ4",
+      "api_call_s": 0.56,
+      "ready_s": 185.0,
+      "terminal_status": "READY",
+      "response_keys": [
+        "agentRuntimeArn",
+        "agentRuntimeId",
+        "agentRuntimeVersion",
+        "createdAt",
+        "lastUpdatedAt",
+        "status",
+        "workloadIdentityDetails"
+      ],
+      "response_platformVersion": null,
+      "after": {
+        "status": "READY",
+        "platformVersion": "V2",
+        "agentRuntimeVersion": "3",
+        "failureReason": null
+      }
+    },
+    {
+      "step": "update default runtime to platformVersion=V1",
+      "runtime_id": "acprobe_default_apnortheast2-FxfBnuE1rD",
+      "api_call_s": 0.48,
+      "ready_s": 3.2,
+      "terminal_status": "READY",
+      "response_keys": [
+        "agentRuntimeArn",
+        "agentRuntimeId",
+        "agentRuntimeVersion",
+        "createdAt",
+        "lastUpdatedAt",
+        "status",
+        "workloadIdentityDetails"
+      ],
+      "response_platformVersion": null,
+      "after": {
+        "status": "READY",
+        "platformVersion": "V1",
+        "agentRuntimeVersion": "2",
+        "failureReason": null
+      }
+    }
+  ],
+  "evidence": {
+    "default": {
+      "sessions": 3,
+      "ok": 3,
+      "errors": [],
+      "latency_ms": [
+        5476.97,
+        5419.09,
+        5391.32
+      ],
+      "distinct_boot_ids": 3,
+      "uptime_mono_s": [
+        1.298,
+        1.904,
+        1.858
+      ],
+      "uptime_wall_s": [
+        1.298,
+        1.904,
+        1.858
+      ]
+    },
+    "v1": {
+      "sessions": 3,
+      "ok": 3,
+      "errors": [],
+      "latency_ms": [
+        5387.88,
+        5342.46,
+        5378.88
+      ],
+      "distinct_boot_ids": 3,
+      "uptime_mono_s": [
+        1.819,
+        1.879,
+        1.82
+      ],
+      "uptime_wall_s": [
+        1.819,
+        1.879,
+        1.82
+      ]
+    },
+    "migrate": {
+      "sessions": 3,
+      "ok": 3,
+      "errors": [],
+      "latency_ms": [
+        1694.56,
+        1810.5,
+        1554.97
+      ],
+      "distinct_boot_ids": 2,
+      "uptime_mono_s": [
+        68.546,
+        68.074,
+        68.425
+      ],
+      "uptime_wall_s": [
+        105.066,
+        106.326,
+        108.822
+      ]
+    },
+    "rollback": {
+      "sessions": 3,
+      "ok": 3,
+      "errors": [],
+      "latency_ms": [
+        5323.65,
+        5425.91,
+        5374.26
+      ],
+      "distinct_boot_ids": 3,
+      "uptime_mono_s": [
+        1.839,
+        1.864,
+        1.795
+      ],
+      "uptime_wall_s": [
+        1.839,
+        1.864,
+        1.795
+      ]
+    }
+  },
+  "list_agent_runtimes_items": [
+    {
+      "agentRuntimeArn": "arn:aws:bedrock-agentcore:ap-northeast-2:061525506XXX:runtime/acprobe_v1_apnortheast2-6eXysr2FQ4",
+      "agentRuntimeId": "acprobe_v1_apnortheast2-6eXysr2FQ4",
+      "agentRuntimeVersion": "3",
+      "agentRuntimeName": "acprobe_v1_apnortheast2",
+      "lastUpdatedAt": "2026-11-13 00:22:29.927680+00:00",
+      "status": "READY"
+    },
+    {
+      "agentRuntimeArn": "arn:aws:bedrock-agentcore:ap-northeast-2:061525506XXX:runtime/acprobe_default_apnortheast2-FxfBnuE1rD",
+      "agentRuntimeId": "acprobe_default_apnortheast2-FxfBnuE1rD",
+      "agentRuntimeVersion": "2",
+      "agentRuntimeName": "acprobe_default_apnortheast2",
+      "lastUpdatedAt": "2026-11-13 00:22:38.841779+00:00",
+      "status": "READY"
+    }
+  ],
+  "finished_utc": "2026-11-13T00:22:57.830698+00:00",
+  "deleted": true
+}

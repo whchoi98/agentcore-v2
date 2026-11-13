@@ -1,0 +1,320 @@
+[build] creating ECR repository agentcore-v2-bench-agent
+[build] docker login 061525506XXX.dkr.ecr.ap-northeast-1.amazonaws.com
+WARNING! Your password will be stored unencrypted in /home/ec2-user/.docker/config.json.
+Configure a credential helper to remove this warning. See
+https://docs.docker.com/engine/reference/commandline/login/#credentials-store
+
+Login Succeeded
+[build] 200mb (PAD_MB=0) -> 061525506XXX.dkr.ecr.ap-northeast-1.amazonaws.com/agentcore-v2-bench-agent:200mb
+#0 building with "default" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile
+#1 transferring dockerfile: 989B done
+#1 DONE 0.1s
+
+#2 resolve image config for docker.io/docker/dockerfile:1
+#2 DONE 1.7s
+
+#3 docker-image://docker.io/docker/dockerfile:1@sha256:ecfaec9ed6d810b56388c508f4121597bfbba70d41a6dfeee4d8cad5f295fc32
+#3 resolve docker.io/docker/dockerfile:1@sha256:ecfaec9ed6d810b56388c508f4121597bfbba70d41a6dfeee4d8cad5f295fc32 0.0s done
+#3 sha256:ecfaec9ed6d810b56388c508f4121597bfbba70d41a6dfeee4d8cad5f295fc32 9.08kB / 9.08kB done
+#3 sha256:c3b66a665852ac170efea25a37f23deb86c2decda65806441a2aa1fe31700135 1.13kB / 1.13kB done
+#3 sha256:4f7d231ef9845e002d072420e08ed772ab2a505c50fc284fdc900c9a35669ff2 1.33kB / 1.33kB done
+#3 sha256:48ca54f0226d3b90064659efd4391d107ad948df73aed877309530e6f3ef19df 0B / 13.01MB 0.1s
+#3 sha256:48ca54f0226d3b90064659efd4391d107ad948df73aed877309530e6f3ef19df 13.01MB / 13.01MB 0.2s done
+#3 extracting sha256:48ca54f0226d3b90064659efd4391d107ad948df73aed877309530e6f3ef19df 0.1s done
+#3 DONE 0.4s
+
+#4 [internal] load build definition from Dockerfile
+#4 DONE 0.0s
+
+#5 [internal] load metadata for docker.io/library/python:3.13-slim
+#5 DONE 1.7s
+
+#6 [internal] load .dockerignore
+#6 transferring context: 2B done
+#6 DONE 0.0s
+
+#7 [1/6] FROM docker.io/library/python:3.13-slim@sha256:64259673bf7dc32a42821929e59682f6cfda0341f0a5345af35d209db236940e
+#7 resolve docker.io/library/python:3.13-slim@sha256:64259673bf7dc32a42821929e59682f6cfda0341f0a5345af35d209db236940e 0.0s done
+#7 ...
+
+#8 [internal] load build context
+#8 transferring context: 3.85kB done
+#8 DONE 0.0s
+
+#7 [1/6] FROM docker.io/library/python:3.13-slim@sha256:64259673bf7dc32a42821929e59682f6cfda0341f0a5345af35d209db236940e
+#7 sha256:4b83fbae47ddba3c3f918e9d9dc484673954455ccfec337afd1691df0faa9d62 0B / 11.83MB 0.2s
+#7 sha256:64259673bf7dc32a42821929e59682f6cfda0341f0a5345af35d209db236940e 10.37kB / 10.37kB done
+#7 sha256:e2a5fce94bd761967528a12f16d707c2613e1522f3f2d77fa45766f45962547f 1.75kB / 1.75kB done
+#7 sha256:ebd5199dff301d17e539f7497e5674a67dfd7a75982a6a103d77dc990258da7d 5.53kB / 5.53kB done
+#7 sha256:bd36565c0fdebaf0f3af5c3b4ce610ca085ced32e9e9da850d95912f5f18f47b 0B / 30.19MB 0.2s
+#7 sha256:123abebbace7b00617ae9e3b7716ad69400ff74e6cddda434d70254d9772a826 0B / 1.28MB 0.2s
+#7 sha256:bd36565c0fdebaf0f3af5c3b4ce610ca085ced32e9e9da850d95912f5f18f47b 30.19MB / 30.19MB 0.3s
+#7 extracting sha256:bd36565c0fdebaf0f3af5c3b4ce610ca085ced32e9e9da850d95912f5f18f47b
+#7 sha256:bd36565c0fdebaf0f3af5c3b4ce610ca085ced32e9e9da850d95912f5f18f47b 30.19MB / 30.19MB 0.3s done
+#7 sha256:123abebbace7b00617ae9e3b7716ad69400ff74e6cddda434d70254d9772a826 1.28MB / 1.28MB 0.4s
+#7 sha256:0fb3db4aef9a2b829578ae91e7581b1a69b5a6426b228fed51743b89268c1f33 0B / 249B 0.4s
+#7 sha256:123abebbace7b00617ae9e3b7716ad69400ff74e6cddda434d70254d9772a826 1.28MB / 1.28MB 0.4s done
+#7 sha256:4b83fbae47ddba3c3f918e9d9dc484673954455ccfec337afd1691df0faa9d62 11.83MB / 11.83MB 0.6s done
+#7 sha256:0fb3db4aef9a2b829578ae91e7581b1a69b5a6426b228fed51743b89268c1f33 249B / 249B 0.6s done
+#7 extracting sha256:bd36565c0fdebaf0f3af5c3b4ce610ca085ced32e9e9da850d95912f5f18f47b 0.5s done
+#7 extracting sha256:123abebbace7b00617ae9e3b7716ad69400ff74e6cddda434d70254d9772a826 0.0s done
+#7 extracting sha256:4b83fbae47ddba3c3f918e9d9dc484673954455ccfec337afd1691df0faa9d62 0.1s
+#7 extracting sha256:4b83fbae47ddba3c3f918e9d9dc484673954455ccfec337afd1691df0faa9d62 0.3s done
+#7 extracting sha256:0fb3db4aef9a2b829578ae91e7581b1a69b5a6426b228fed51743b89268c1f33 done
+#7 DONE 1.4s
+
+#9 [2/6] WORKDIR /app
+#9 DONE 0.4s
+
+#10 [3/6] COPY requirements.txt ./
+#10 DONE 0.1s
+
+#11 [4/6] RUN pip install --no-cache-dir --no-compile -r requirements.txt  && pip uninstall -y pip  && rm -rf /usr/local/lib/python3.13/ensurepip /root/.cache
+#11 1.434 Collecting fastapi==0.141.1 (from -r requirements.txt (line 2))
+#11 1.458   Downloading fastapi-0.141.1-py3-none-any.whl.metadata (27 kB)
+#11 1.478 Collecting uvicorn==0.53.0 (from -r requirements.txt (line 3))
+#11 1.482   Downloading uvicorn-0.53.0-py3-none-any.whl.metadata (6.6 kB)
+#11 1.497 Collecting starlette>=0.46.0 (from fastapi==0.141.1->-r requirements.txt (line 2))
+#11 1.502   Downloading starlette-1.6.0-py3-none-any.whl.metadata (6.4 kB)
+#11 1.565 Collecting pydantic>=2.9.0 (from fastapi==0.141.1->-r requirements.txt (line 2))
+#11 1.569   Downloading pydantic-2.13.5-py3-none-any.whl.metadata (110 kB)
+#11 1.586 Collecting typing-extensions>=4.8.0 (from fastapi==0.141.1->-r requirements.txt (line 2))
+#11 1.590   Downloading typing_extensions-4.16.0-py3-none-any.whl.metadata (3.3 kB)
+#11 1.597 Collecting typing-inspection>=0.4.2 (from fastapi==0.141.1->-r requirements.txt (line 2))
+#11 1.601   Downloading typing_inspection-0.4.4-py3-none-any.whl.metadata (2.6 kB)
+#11 1.607 Collecting annotated-doc>=0.0.2 (from fastapi==0.141.1->-r requirements.txt (line 2))
+#11 1.611   Downloading annotated_doc-0.0.5-py3-none-any.whl.metadata (6.5 kB)
+#11 1.621 Collecting click>=7.0 (from uvicorn==0.53.0->-r requirements.txt (line 3))
+#11 1.625   Downloading click-8.5.0-py3-none-any.whl.metadata (2.6 kB)
+#11 1.632 Collecting h11>=0.8 (from uvicorn==0.53.0->-r requirements.txt (line 3))
+#11 1.636   Downloading h11-0.16.0-py3-none-any.whl.metadata (8.3 kB)
+#11 1.644 Collecting annotated-types>=0.6.0 (from pydantic>=2.9.0->fastapi==0.141.1->-r requirements.txt (line 2))
+#11 1.648   Downloading annotated_types-0.8.0-py3-none-any.whl.metadata (15 kB)
+#11 2.033 Collecting pydantic-core==2.46.5 (from pydantic>=2.9.0->fastapi==0.141.1->-r requirements.txt (line 2))
+#11 2.038   Downloading pydantic_core-2.46.5-cp313-cp313-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (6.6 kB)
+#11 2.049 Collecting anyio<5,>=3.6.2 (from starlette>=0.46.0->fastapi==0.141.1->-r requirements.txt (line 2))
+#11 2.053   Downloading anyio-4.15.1-py3-none-any.whl.metadata (4.7 kB)
+#11 2.062 Collecting idna>=2.8 (from anyio<5,>=3.6.2->starlette>=0.46.0->fastapi==0.141.1->-r requirements.txt (line 2))
+#11 2.066   Downloading idna-3.20-py3-none-any.whl.metadata (7.2 kB)
+#11 2.074 Downloading fastapi-0.141.1-py3-none-any.whl (131 kB)
+#11 2.079 Downloading uvicorn-0.53.0-py3-none-any.whl (87 kB)
+#11 2.083 Downloading annotated_doc-0.0.5-py3-none-any.whl (5.3 kB)
+#11 2.086 Downloading click-8.5.0-py3-none-any.whl (125 kB)
+#11 2.091 Downloading h11-0.16.0-py3-none-any.whl (37 kB)
+#11 2.094 Downloading pydantic-2.13.5-py3-none-any.whl (472 kB)
+#11 2.156 Downloading pydantic_core-2.46.5-cp313-cp313-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (2.0 MB)
+#11 2.162    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.0/2.0 MB 393.5 MB/s  0:00:00
+#11 2.166 Downloading annotated_types-0.8.0-py3-none-any.whl (13 kB)
+#11 2.170 Downloading starlette-1.6.0-py3-none-any.whl (75 kB)
+#11 2.174 Downloading anyio-4.15.1-py3-none-any.whl (132 kB)
+#11 2.178 Downloading idna-3.20-py3-none-any.whl (69 kB)
+#11 2.182 Downloading typing_extensions-4.16.0-py3-none-any.whl (45 kB)
+#11 2.187 Downloading typing_inspection-0.4.4-py3-none-any.whl (14 kB)
+#11 2.275 Installing collected packages: typing-extensions, idna, h11, click, annotated-types, annotated-doc, uvicorn, typing-inspection, pydantic-core, anyio, starlette, pydantic, fastapi
+#11 2.408 
+#11 2.410 Successfully installed annotated-doc-0.0.5 annotated-types-0.8.0 anyio-4.15.1 click-8.5.0 fastapi-0.141.1 h11-0.16.0 idna-3.20 pydantic-2.13.5 pydantic-core-2.46.5 starlette-1.6.0 typing-extensions-4.16.0 typing-inspection-0.4.4 uvicorn-0.53.0
+#11 2.410 WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager, possibly rendering your system unusable. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv. Use the --root-user-action option if you know what you are doing and want to suppress this warning.
+#11 3.310 Found existing installation: pip 26.2.1
+#11 3.332 Uninstalling pip-26.2.1:
+#11 3.411   Successfully uninstalled pip-26.2.1
+#11 3.425 WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager, possibly rendering your system unusable. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv. Use the --root-user-action option if you know what you are doing and want to suppress this warning.
+#11 DONE 3.5s
+
+#12 [5/6] COPY agent.py ./
+#12 DONE 0.1s
+
+#13 [6/6] RUN if [ "0" -gt 0 ]; then       dd if=/dev/urandom of=/app/.size-padding bs=1M count="0" status=none;     fi
+#13 DONE 0.6s
+
+#14 exporting to image
+#14 exporting layers 0.1s done
+#14 writing image sha256:4959b45500a147f611f2638e6590ca50bf67dee426a0ef78da1e988af21b7686 done
+#14 naming to 061525506XXX.dkr.ecr.ap-northeast-1.amazonaws.com/agentcore-v2-bench-agent:200mb done
+#14 DONE 0.1s
+The push refers to repository [061525506XXX.dkr.ecr.ap-northeast-1.amazonaws.com/agentcore-v2-bench-agent]
+1df11cbd69db: Preparing
+c758e34c8fdf: Preparing
+94f7ddc70c87: Preparing
+af3405da23c7: Preparing
+486c7ea7bcb0: Preparing
+8fd7bcc5bf0e: Preparing
+d81ccc5a9566: Preparing
+8a6da6eb1b28: Preparing
+8227a1264c7f: Preparing
+8fd7bcc5bf0e: Waiting
+d81ccc5a9566: Waiting
+8a6da6eb1b28: Waiting
+8227a1264c7f: Waiting
+c758e34c8fdf: Pushed
+1df11cbd69db: Pushed
+af3405da23c7: Pushed
+486c7ea7bcb0: Pushed
+94f7ddc70c87: Pushed
+8fd7bcc5bf0e: Pushed
+8a6da6eb1b28: Pushed
+d81ccc5a9566: Pushed
+8227a1264c7f: Pushed
+200mb: digest: sha256:97ef95177fa3aad2de7569a4ee8ba5cc9adb2464c3e5211290f920262eaf3288 size: 2197
+[build] 1gb (PAD_MB=797) -> 061525506XXX.dkr.ecr.ap-northeast-1.amazonaws.com/agentcore-v2-bench-agent:1gb
+#0 building with "default" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile
+#1 transferring dockerfile: 989B done
+#1 DONE 0.0s
+
+#2 resolve image config for docker.io/docker/dockerfile:1
+#2 DONE 0.3s
+
+#3 docker-image://docker.io/docker/dockerfile:1@sha256:ecfaec9ed6d810b56388c508f4121597bfbba70d41a6dfeee4d8cad5f295fc32
+#3 CACHED
+
+#4 [internal] load build definition from Dockerfile
+#4 DONE 0.0s
+
+#5 [internal] load metadata for docker.io/library/python:3.13-slim
+#5 DONE 0.3s
+
+#6 [internal] load .dockerignore
+#6 transferring context: 2B done
+#6 DONE 0.0s
+
+#7 [1/6] FROM docker.io/library/python:3.13-slim@sha256:64259673bf7dc32a42821929e59682f6cfda0341f0a5345af35d209db236940e
+#7 DONE 0.0s
+
+#8 [internal] load build context
+#8 transferring context: 175B done
+#8 DONE 0.0s
+
+#9 [3/6] COPY requirements.txt ./
+#9 CACHED
+
+#10 [4/6] RUN pip install --no-cache-dir --no-compile -r requirements.txt  && pip uninstall -y pip  && rm -rf /usr/local/lib/python3.13/ensurepip /root/.cache
+#10 CACHED
+
+#11 [2/6] WORKDIR /app
+#11 CACHED
+
+#12 [5/6] COPY agent.py ./
+#12 CACHED
+
+#13 [6/6] RUN if [ "797" -gt 0 ]; then       dd if=/dev/urandom of=/app/.size-padding bs=1M count="797" status=none;     fi
+#13 DONE 2.5s
+
+#14 exporting to image
+#14 exporting layers
+#14 exporting layers 2.1s done
+#14 writing image sha256:cf379513046c789b7117cbdf62a48012f673fe63f7244f36c1aba108c7c94d3b 0.1s done
+#14 naming to 061525506XXX.dkr.ecr.ap-northeast-1.amazonaws.com/agentcore-v2-bench-agent:1gb
+#14 naming to 061525506XXX.dkr.ecr.ap-northeast-1.amazonaws.com/agentcore-v2-bench-agent:1gb 0.2s done
+#14 DONE 2.4s
+The push refers to repository [061525506XXX.dkr.ecr.ap-northeast-1.amazonaws.com/agentcore-v2-bench-agent]
+026abe10ca66: Preparing
+c758e34c8fdf: Preparing
+94f7ddc70c87: Preparing
+af3405da23c7: Preparing
+486c7ea7bcb0: Preparing
+8fd7bcc5bf0e: Preparing
+d81ccc5a9566: Preparing
+8a6da6eb1b28: Preparing
+8227a1264c7f: Preparing
+8fd7bcc5bf0e: Waiting
+8a6da6eb1b28: Waiting
+d81ccc5a9566: Waiting
+8227a1264c7f: Waiting
+486c7ea7bcb0: Layer already exists
+94f7ddc70c87: Layer already exists
+af3405da23c7: Layer already exists
+c758e34c8fdf: Layer already exists
+d81ccc5a9566: Layer already exists
+8fd7bcc5bf0e: Layer already exists
+8a6da6eb1b28: Layer already exists
+8227a1264c7f: Layer already exists
+026abe10ca66: Pushed
+1gb: digest: sha256:31463c5fc58bccb28c0b9f2bad7db45443fc078709c42a35975884ade889905b size: 2204
+[build] 2gb (PAD_MB=1821) -> 061525506XXX.dkr.ecr.ap-northeast-1.amazonaws.com/agentcore-v2-bench-agent:2gb
+#0 building with "default" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile
+#1 transferring dockerfile: 989B done
+#1 DONE 0.0s
+
+#2 resolve image config for docker.io/docker/dockerfile:1
+#2 DONE 0.2s
+
+#3 docker-image://docker.io/docker/dockerfile:1@sha256:ecfaec9ed6d810b56388c508f4121597bfbba70d41a6dfeee4d8cad5f295fc32
+#3 CACHED
+
+#4 [internal] load build definition from Dockerfile
+#4 DONE 0.0s
+
+#5 [internal] load metadata for docker.io/library/python:3.13-slim
+#5 DONE 0.3s
+
+#6 [internal] load .dockerignore
+#6 transferring context: 2B done
+#6 DONE 0.0s
+
+#7 [1/6] FROM docker.io/library/python:3.13-slim@sha256:64259673bf7dc32a42821929e59682f6cfda0341f0a5345af35d209db236940e
+#7 DONE 0.0s
+
+#8 [internal] load build context
+#8 transferring context: 175B done
+#8 DONE 0.0s
+
+#9 [2/6] WORKDIR /app
+#9 CACHED
+
+#10 [3/6] COPY requirements.txt ./
+#10 CACHED
+
+#11 [4/6] RUN pip install --no-cache-dir --no-compile -r requirements.txt  && pip uninstall -y pip  && rm -rf /usr/local/lib/python3.13/ensurepip /root/.cache
+#11 CACHED
+
+#12 [5/6] COPY agent.py ./
+#12 CACHED
+
+#13 [6/6] RUN if [ "1821" -gt 0 ]; then       dd if=/dev/urandom of=/app/.size-padding bs=1M count="1821" status=none;     fi
+#13 DONE 18.1s
+
+#14 exporting to image
+#14 exporting layers
+#14 exporting layers 2.8s done
+#14 writing image sha256:00105b818c51dd13a9c28e4abeb12489e4a54dd36f714d855eb206c787854fbf done
+#14 naming to 061525506XXX.dkr.ecr.ap-northeast-1.amazonaws.com/agentcore-v2-bench-agent:2gb done
+#14 DONE 2.8s
+The push refers to repository [061525506XXX.dkr.ecr.ap-northeast-1.amazonaws.com/agentcore-v2-bench-agent]
+dfd00f6e6b17: Preparing
+c758e34c8fdf: Preparing
+94f7ddc70c87: Preparing
+af3405da23c7: Preparing
+486c7ea7bcb0: Preparing
+8fd7bcc5bf0e: Preparing
+d81ccc5a9566: Preparing
+8a6da6eb1b28: Preparing
+8227a1264c7f: Preparing
+8fd7bcc5bf0e: Waiting
+d81ccc5a9566: Waiting
+8a6da6eb1b28: Waiting
+8227a1264c7f: Waiting
+af3405da23c7: Layer already exists
+94f7ddc70c87: Layer already exists
+486c7ea7bcb0: Layer already exists
+c758e34c8fdf: Layer already exists
+8a6da6eb1b28: Layer already exists
+d81ccc5a9566: Layer already exists
+8fd7bcc5bf0e: Layer already exists
+8227a1264c7f: Layer already exists
+dfd00f6e6b17: Pushed
+2gb: digest: sha256:4a0468055eb5af67043db75e1940e82e7857981fd4ff0b4dcb6200f1913896fc size: 2205
+[build] sizes as reported by ECR:
+-------------------------
+|    DescribeImages     |
++-------------+---------+
+|     MB      |   tag   |
++-------------+---------+
+|  47577525   |  200mb  |
+|  883547846  |  1gb    |
+|  1957617362 |  2gb    |
++-------------+---------+

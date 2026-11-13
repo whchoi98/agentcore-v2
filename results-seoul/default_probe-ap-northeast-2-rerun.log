@@ -1,0 +1,7 @@
+[deploy] role AgentCoreV2BenchExecutionRoleSeoul exists, trust policy refreshed
+[probe] create default (platformVersion omitted): READY in 3.2s -> platformVersion=V1 version=1
+[probe]   evidence: {'sessions': 3, 'ok': 3, 'errors': [], 'latency_ms': [5397.79, 5338.09, 5306.59], 'distinct_boot_ids': 3, 'uptime_mono_s': [1.81, 1.798, 1.742], 'uptime_wall_s': [1.81, 1.798, 1.742]}
+[probe] create V2 with 3584 B of environment variables: READY in 185.5s -> platformVersion=V2 version=1
+[probe] deleted default runtime acprobe_default_apnortheast2-hLWPnR94qP
+[probe] deleted envlimit runtime acprobe_env_apnortheast2-ODu8cX9g68
+[probe] wrote /home/ec2-user/my-project/agentcore-v2/results-seoul/default_probe-ap-northeast-2-rerun.json

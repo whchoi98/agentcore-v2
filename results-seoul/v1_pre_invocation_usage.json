@@ -1,0 +1,99 @@
+{
+  "acbench_1gb_V1": {
+    "created": "00:27:47",
+    "first_invocation": "00:35",
+    "pre_gbh": 0.1497,
+    "pre_vcpuh": 0.047,
+    "pre_points": [
+      [
+        "00:27",
+        0.0442
+      ],
+      [
+        "00:28",
+        0.1055
+      ]
+    ],
+    "minutes_after_create": [
+      -0.8,
+      0.2
+    ]
+  },
+  "acbench_1gb_V2": {
+    "created": "00:27:51",
+    "first_invocation": "00:36",
+    "pre_gbh": 0,
+    "pre_vcpuh": 0,
+    "pre_points": [],
+    "minutes_after_create": []
+  },
+  "acbench_200mb_V1": {
+    "created": "00:24:37",
+    "first_invocation": "00:35",
+    "pre_gbh": 0.0228,
+    "pre_vcpuh": 0.0144,
+    "pre_points": [
+      [
+        "00:24",
+        0.0228
+      ]
+    ],
+    "minutes_after_create": [
+      -0.6
+    ]
+  },
+  "acbench_200mb_V2": {
+    "created": "00:24:41",
+    "first_invocation": "00:35",
+    "pre_gbh": 0,
+    "pre_vcpuh": 0,
+    "pre_points": [],
+    "minutes_after_create": []
+  },
+  "acbench_2gb_V1": {
+    "created": "00:31:13",
+    "first_invocation": "00:36",
+    "pre_gbh": 0.3752,
+    "pre_vcpuh": 0.0866,
+    "pre_points": [
+      [
+        "00:31",
+        0.3752
+      ]
+    ],
+    "minutes_after_create": [
+      -0.2
+    ]
+  },
+  "acbench_2gb_V2": {
+    "created": "00:31:17",
+    "first_invocation": "00:37",
+    "pre_gbh": 0,
+    "pre_vcpuh": 0,
+    "pre_points": [],
+    "minutes_after_create": []
+  },
+  "acbench_mem_V1": {
+    "created": "00:35:05",
+    "first_invocation": "00:39",
+    "pre_gbh": 0.0138,
+    "pre_vcpuh": 0.0087,
+    "pre_points": [
+      [
+        "00:35",
+        0.0138
+      ]
+    ],
+    "minutes_after_create": [
+      -0.1
+    ]
+  },
+  "acbench_mem_V2": {
+    "created": "00:35:09",
+    "first_invocation": "00:47",
+    "pre_gbh": 0,
+    "pre_vcpuh": 0,
+    "pre_points": [],
+    "minutes_after_create": []
+  }
+}

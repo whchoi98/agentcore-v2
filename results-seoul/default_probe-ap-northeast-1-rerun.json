@@ -1,0 +1,65 @@
+{
+  "region": "ap-northeast-1",
+  "started_utc": "2026-11-13T01:54:57.069761+00:00",
+  "botocore": "1.44.2",
+  "image_uri": "061525506XXX.dkr.ecr.ap-northeast-1.amazonaws.com/agentcore-v2-bench-agent:200mb",
+  "steps": [
+    {
+      "step": "create default (platformVersion omitted)",
+      "runtime_id": "acprobe_default_apnortheast1-zZqiAf4KiT",
+      "api_call_s": 0.81,
+      "ready_s": 3.3,
+      "terminal_status": "READY",
+      "response_keys": [
+        "agentRuntimeArn",
+        "agentRuntimeId",
+        "agentRuntimeVersion",
+        "createdAt",
+        "status",
+        "workloadIdentityDetails"
+      ],
+      "response_platformVersion": null,
+      "after": {
+        "status": "READY",
+        "platformVersion": "V1",
+        "agentRuntimeVersion": "1",
+        "failureReason": null
+      }
+    }
+  ],
+  "evidence": {
+    "default": {
+      "sessions": 3,
+      "ok": 3,
+      "errors": [],
+      "latency_ms": [
+        5497.71,
+        5432.42,
+        5408.94
+      ],
+      "distinct_boot_ids": 3,
+      "uptime_mono_s": [
+        1.846,
+        1.078,
+        0.987
+      ],
+      "uptime_wall_s": [
+        1.846,
+        1.078,
+        0.987
+      ]
+    }
+  },
+  "list_agent_runtimes_items": [
+    {
+      "agentRuntimeArn": "arn:aws:bedrock-agentcore:ap-northeast-1:061525506XXX:runtime/acprobe_default_apnortheast1-zZqiAf4KiT",
+      "agentRuntimeId": "acprobe_default_apnortheast1-zZqiAf4KiT",
+      "agentRuntimeVersion": "1",
+      "agentRuntimeName": "acprobe_default_apnortheast1",
+      "lastUpdatedAt": "2026-11-13 01:54:59.124006+00:00",
+      "status": "READY"
+    }
+  ],
+  "finished_utc": "2026-11-13T01:55:18.646221+00:00",
+  "deleted": true
+}

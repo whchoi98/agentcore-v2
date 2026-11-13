@@ -1,0 +1,34 @@
+WARNING! Your password will be stored unencrypted in /home/ec2-user/.docker/config.json.
+Configure a credential helper to remove this warning. See
+https://docs.docker.com/engine/reference/commandline/login/#credentials-store
+
+WARNING! Your password will be stored unencrypted in /home/ec2-user/.docker/config.json.
+Configure a credential helper to remove this warning. See
+https://docs.docker.com/engine/reference/commandline/login/#credentials-store
+
+[copy] 061525506XXX.dkr.ecr.ap-northeast-1.amazonaws.com/agentcore-v2-bench-agent:200mb -> 061525506XXX.dkr.ecr.ap-northeast-2.amazonaws.com/agentcore-v2-bench-agent:200mb
+#1 [internal] pushing 061525506XXX.dkr.ecr.ap-northeast-2.amazonaws.com/agentcore-v2-bench-agent:200mb
+#1 0.000 copying sha256:97ef95177fa3aad2de7569a4ee8ba5cc9adb2464c3e5211290f920262eaf3288 from 061525506XXX.dkr.ecr.ap-northeast-1.amazonaws.com/agentcore-v2-bench-agent:200mb to 061525506XXX.dkr.ecr.ap-northeast-2.amazonaws.com/agentcore-v2-bench-agent:200mb
+#1 0.507 pushing sha256:913536001affd8d434097123eff91c9c767f6a65688b3075955bf2f2c88bc9ca to 061525506XXX.dkr.ecr.ap-northeast-2.amazonaws.com/agentcore-v2-bench-agent:200mb
+#1 DONE 0.6s
+[copy] 061525506XXX.dkr.ecr.ap-northeast-1.amazonaws.com/agentcore-v2-bench-agent:1gb -> 061525506XXX.dkr.ecr.ap-northeast-2.amazonaws.com/agentcore-v2-bench-agent:1gb
+#1 [internal] pushing 061525506XXX.dkr.ecr.ap-northeast-2.amazonaws.com/agentcore-v2-bench-agent:1gb
+#1 0.000 copying sha256:31463c5fc58bccb28c0b9f2bad7db45443fc078709c42a35975884ade889905b from 061525506XXX.dkr.ecr.ap-northeast-1.amazonaws.com/agentcore-v2-bench-agent:1gb to 061525506XXX.dkr.ecr.ap-northeast-2.amazonaws.com/agentcore-v2-bench-agent:1gb
+#1 0.542 pushing sha256:e84c7f6a5f22b0428b5c917f30ca65b6b54677e5275f7b8c37687bf9c4fb65c3 to 061525506XXX.dkr.ecr.ap-northeast-2.amazonaws.com/agentcore-v2-bench-agent:1gb
+#1 DONE 0.7s
+[copy] 061525506XXX.dkr.ecr.ap-northeast-1.amazonaws.com/agentcore-v2-bench-agent:2gb -> 061525506XXX.dkr.ecr.ap-northeast-2.amazonaws.com/agentcore-v2-bench-agent:2gb
+#1 [internal] pushing 061525506XXX.dkr.ecr.ap-northeast-2.amazonaws.com/agentcore-v2-bench-agent:2gb
+#1 0.000 copying sha256:4a0468055eb5af67043db75e1940e82e7857981fd4ff0b4dcb6200f1913896fc from 061525506XXX.dkr.ecr.ap-northeast-1.amazonaws.com/agentcore-v2-bench-agent:2gb to 061525506XXX.dkr.ecr.ap-northeast-2.amazonaws.com/agentcore-v2-bench-agent:2gb
+#1 0.466 pushing sha256:1b664af81e165f498a6722b8c7550aa5db09af4891d04b9d290626e7f286aed4 to 061525506XXX.dkr.ecr.ap-northeast-2.amazonaws.com/agentcore-v2-bench-agent:2gb
+#1 DONE 0.6s
+[copy] 061525506XXX.dkr.ecr.ap-northeast-1.amazonaws.com/agentcore-v2-bench-agent:mem -> 061525506XXX.dkr.ecr.ap-northeast-2.amazonaws.com/agentcore-v2-bench-agent:mem
+#1 [internal] pushing 061525506XXX.dkr.ecr.ap-northeast-2.amazonaws.com/agentcore-v2-bench-agent:mem
+#1 0.000 copying sha256:393dec596ae4bb58429858965991f1d9bb851137faeda73faafedeeeebb943c6 from 061525506XXX.dkr.ecr.ap-northeast-1.amazonaws.com/agentcore-v2-bench-agent:mem to 061525506XXX.dkr.ecr.ap-northeast-2.amazonaws.com/agentcore-v2-bench-agent:mem
+#1 0.490 pushing sha256:a1cfcd25e6501a2a76dbb25aa8f0d98cb76b37dcc472a8177ce26517d5712855 to 061525506XXX.dkr.ecr.ap-northeast-2.amazonaws.com/agentcore-v2-bench-agent:mem
+#1 DONE 0.6s
+[copy] digest check
+  200mb: OK sha256:97ef95177fa3aad2de7569a4ee8ba5cc9adb2464c3e5211290f920262eaf3288
+  1gb: OK sha256:31463c5fc58bccb28c0b9f2bad7db45443fc078709c42a35975884ade889905b
+  2gb: OK sha256:4a0468055eb5af67043db75e1940e82e7857981fd4ff0b4dcb6200f1913896fc
+  mem: OK sha256:393dec596ae4bb58429858965991f1d9bb851137faeda73faafedeeeebb943c6
+exit=0

@@ -1,0 +1,13 @@
+[deploy] created role AgentCoreV2BenchExecutionRoleSeoul
+[probe] create default (platformVersion omitted): READY in 3.2s -> platformVersion=V1 version=1
+[probe]   evidence: {'sessions': 3, 'ok': 3, 'errors': [], 'latency_ms': [5476.97, 5419.09, 5391.32], 'distinct_boot_ids': 3, 'uptime_mono_s': [1.298, 1.904, 1.858], 'uptime_wall_s': [1.298, 1.904, 1.858]}
+[probe] create explicit V1: READY in 3.2s -> platformVersion=V1 version=1
+[probe]   evidence: {'sessions': 3, 'ok': 3, 'errors': [], 'latency_ms': [5387.88, 5342.46, 5378.88], 'distinct_boot_ids': 3, 'uptime_mono_s': [1.819, 1.879, 1.82], 'uptime_wall_s': [1.819, 1.879, 1.82]}
+[probe] update V1 runtime, platformVersion omitted: READY in 3.2s -> platformVersion=V1 version=2
+[probe] update V1 runtime to platformVersion=V2: READY in 185.0s -> platformVersion=V2 version=3
+[probe]   evidence: {'sessions': 3, 'ok': 3, 'errors': [], 'latency_ms': [1694.56, 1810.5, 1554.97], 'distinct_boot_ids': 2, 'uptime_mono_s': [68.546, 68.074, 68.425], 'uptime_wall_s': [105.066, 106.326, 108.822]}
+[probe] update default runtime to platformVersion=V1: READY in 3.2s -> platformVersion=V1 version=2
+[probe]   evidence: {'sessions': 3, 'ok': 3, 'errors': [], 'latency_ms': [5323.65, 5425.91, 5374.26], 'distinct_boot_ids': 3, 'uptime_mono_s': [1.839, 1.864, 1.795], 'uptime_wall_s': [1.839, 1.864, 1.795]}
+[probe] deleted default runtime acprobe_default_apnortheast2-FxfBnuE1rD
+[probe] deleted v1 runtime acprobe_v1_apnortheast2-6eXysr2FQ4
+[probe] wrote /home/ec2-user/my-project/agentcore-v2/results-seoul/default_probe-ap-northeast-2.json

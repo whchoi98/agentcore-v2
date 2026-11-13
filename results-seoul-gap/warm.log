@@ -1,0 +1,19 @@
+[rtt] {'host': 'bedrock-agentcore.ap-northeast-2.amazonaws.com', 'samples': 10, 'tcp_connect_ms_median': 2.39, 'tcp_tls_ms_median': 4.6}
+[warm] acbench_200mb_V1: 1 cold + 30 warm invokes on one session
+[warm]   cold_first=413.46ms warm p50=87.9 p75=94.2 p99=128.3 ms | handler_p75=0.1ms
+[bench] quiet gap 90s
+[warm] acbench_200mb_V2: 1 cold + 30 warm invokes on one session
+[warm]   cold_first=1561.5ms warm p50=106.1 p75=112.1 p99=169.3 ms | handler_p75=0.1ms
+[bench] quiet gap 90s
+[warm] acbench_1gb_V1: 1 cold + 30 warm invokes on one session
+[warm]   cold_first=438.58ms warm p50=79.7 p75=88.6 p99=134.3 ms | handler_p75=0.1ms
+[bench] quiet gap 90s
+[warm] acbench_1gb_V2: 1 cold + 30 warm invokes on one session
+[warm]   cold_first=2084.09ms warm p50=100.5 p75=112.0 p99=161.1 ms | handler_p75=0.1ms
+[bench] quiet gap 90s
+[warm] acbench_2gb_V1: 1 cold + 30 warm invokes on one session
+[warm]   cold_first=443.54ms warm p50=79.8 p75=87.7 p99=141.7 ms | handler_p75=0.1ms
+[bench] quiet gap 90s
+[warm] acbench_2gb_V2: 1 cold + 30 warm invokes on one session
+[warm]   cold_first=1764.66ms warm p50=101.0 p75=110.7 p99=162.0 ms | handler_p75=0.1ms
+[bench] wrote /home/ec2-user/my-project/agentcore-v2/results-seoul-gap/bench-warm.json
