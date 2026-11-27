@@ -45,8 +45,11 @@ def main() -> int:
     first = min(ts(r["created_utc"]) for r in d["runtimes"].values())
     burst = ts(d["burst_start_utc"])
     last = max(ts(r.get("deleted_utc", d["burst_end_utc"])) for r in d["runtimes"].values())
-    w_create = (first - timedelta(minutes=1), burst)
-    w_burst = (burst, last + timedelta(minutes=5))
+    # CloudWatch stamps each 60 s bucket with its start, so the bucket that holds
+    # the burst starts before burst_start_utc. Split on the burst's minute.
+    burst_min = burst.replace(second=0, microsecond=0)
+    w_create = (first - timedelta(minutes=1), burst_min)
+    w_burst = (burst_min, last + timedelta(minutes=5))
     out = {"source": path.name, "windows": {"creation": [str(x) for x in w_create],
                                             "burst": [str(x) for x in w_burst]}, "series": {}}
 
